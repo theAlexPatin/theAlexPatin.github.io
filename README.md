@@ -1,3 +1,3 @@
 # Personal Website
 
-Wilson Ding's Personal Website. Find it at [wilsonding.com](http://www.wilsonding.com).
+Wilson Ding's Personal Website. Find it at [theAlexPatin.com](http://www.theAlexPatin.com).
