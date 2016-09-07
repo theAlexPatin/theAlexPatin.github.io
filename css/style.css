@@ -97,10 +97,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #000066;
 	padding-top: 10px;
 	padding-bottom: 20px;
-	letter-spacing: 3px;
 	font-size: 85px;
-	font-weight: bold;
+	
     letter-spacing: 20px;
+    text-shadow: 2px 2px 2px #ffffff;
 }
 
 #headerwrap h4 {
