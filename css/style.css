@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #ffffff;
     text-shadow: 2px 2px 4px #000000;
     letter-spacing: 6px;
-
+    padding-top: 30%;
 }
 
 #footer {
@@ -119,6 +119,52 @@ h1, h2, h3, h4, h5, h6 {
 #footer i:hover {
 	color: #9E9E9E
 }
+
+
+
+
+/*     POPUP       */
+#popup {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    
+    height: 40%;
+    margin-left: -250px; /*Half the value of width to center div*/
+    margin-top: -250px; /*Half the value of height to center div*/
+    z-index: -1;
+    visibility: hidden;
+}
+#popupclose {
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+.popupcontent {
+    height: 30%; 
+}
+
+.popupcontent img{
+    padding-top: 35%;
+    padding-left: 30%;
+    max-width: 750px;
+    max-height: 750px;
+}
+
+#popup[data-pop="slide-down"] {
+  top: -50%;
+  transition: all .5s ease-in-out;
+}
+#popup[data-pop="slide-down"].show {
+  visibility: visible;
+  z-index: 200;
+  opacity: 1;
+  top:0%;
+}
+/*                */
+
+
+
 
 .typed-cursor{
     opacity: 1;
@@ -161,12 +207,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #headerwrap h4 {
+    padding-top: 30%;
 	font-weight: 300;
     font-size: 30px;
 	color: #ffffff;
     text-shadow: 2px 2px 4px #000000;
     letter-spacing: 6px;
 
+}
+
+.popupcontent img{
+    padding-top: 60%;
+    padding-left: 60%;
+    max-width: 450px;
+    max-height: 450px;
 }
 
 #footer {
