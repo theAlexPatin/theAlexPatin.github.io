@@ -42,12 +42,14 @@
 			<div class="row">
 				<h1>ALEX PATIN</h1>
 				<div id="typed-strings">
-					<p>Entrepreneur.</p>
 					<p>Programmer.</p>
+					<p>Entrepreneur.</p>
 					<p>Data Scientist.</p>
-					<p>Electrical Engineer</p>
-					<p>Barista.</p>
 					<p>Spiderman.</p>
+					<p>Electrical Engineer.</p>
+					<p>Space Systems Engineer.</p>
+					<p>Musician.</p>
+					<p>Barista.</p>
 				</div>
 				<h4><span id="typed"></span></h4>
 			</div>
@@ -93,11 +95,14 @@
 	        	backDelay: 750,
 	        	preStringTyped: function(){
 	        		count++;
-	        		if(count%6 == 0){
+	        		if(count == 4){
 	        			popup.className='show';
 	        		}
 	        		else{
 	        			popup.className='';
+	        		}
+	        		if(count == 8){
+	        			count = 0;
 	        		}
 	        	}
 	        });
