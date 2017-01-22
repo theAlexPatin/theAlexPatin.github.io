@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 #news-popup[data-pop="slide-up"].show {
   visibility: visible;
   z-index: 202;
-  opacity: 0.95;
+  opacity: 1;
   top: 50%;
 }
 #news-popup[data-pop="slide-up"].show ~ #overlay {
