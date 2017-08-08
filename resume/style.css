@@ -1,0 +1,294 @@
+/*
+ *
+ * GLOBAL STYLING
+ *
+ */
+
+html, body {
+	background-color: #181818;
+	font-size: 16px;
+	color: #222;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	/*zoom: 94.75%;*/ /* Used for printing in Chrome */
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	line-height: 1.4257;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+#cv {
+	width: 90%;
+	max-width: 820px;
+	background-color: #f3f3f3;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+
+/*
+ *
+ * TOP HEADER
+ *
+ */
+
+.top {
+	width: 100%;
+	background-color: rgb(85,142,213);
+	color: #fff;
+	padding: 36px 0px 0px 0px;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+.name {
+	letter-spacing: 4px;
+	font-size: 64px;
+	float:left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 1.82;
+	transform: scale(.85, 1);
+	font-weight: 200;
+}
+.contact {
+	text-align: left;
+	float:right;
+	font-size: 14px;
+	font-weight: 300;
+}
+.contact td {
+	padding:0 13px;
+}
+
+.icon{
+	font-size:14px;
+}
+
+.role {
+	padding: 16px 0;
+	letter-spacing: 4px;
+	font-size: 16px;
+}
+
+.fa {
+	padding-right: 10px;
+}
+
+
+
+
+.main{
+	display: inline-block;
+}
+
+/*
+*
+* SIDE PANEL SECTION STYLING
+*
+*/
+
+.side {
+	float:left;
+}
+
+/*
+ *
+ * MAIN SECTION GLOBAL STYLING
+ *
+ */
+
+.middle {
+	font-size: 12px;
+	position: relative;
+	padding: 0 30px;
+	float:right;
+}
+
+.header {
+	color: rgb(210,168,76);
+	text-transform: uppercase;
+	width: 100%;
+	border-bottom: 2px solid rgb(210,168,76);
+	font-size: 16px;
+	position: relative;
+}
+.header:after {
+	content: '+';
+	position: absolute;
+	right: 2px;
+	font-size: 24px;
+	bottom: 0;
+}
+
+
+/*
+ *
+ * WORK SECTION
+ *
+ */
+
+#work {
+	margin: 15px 0;
+}
+.job {
+	margin: 10px 0 3px;
+	font-weight: bold;
+	font-size: 13px;
+}
+.year {
+	position: absolute;
+	right: 30px;
+	font-style: italic;
+	font-weight: normal;
+}
+.custom-bullet {
+	padding-left: 10px;
+}
+
+
+/*
+ *
+ * PROJECT SPOTLIGHTS
+ *
+ */
+
+.project {
+	margin: 12px 0;
+}
+.project-header {
+	font-size: 13px;
+	font-style: italic;
+}
+
+
+/*
+ *
+ * SKILLS
+ *
+ */
+
+#skills {
+	margin: 15px 0;
+}
+.skills-list {
+	list-style: none;
+	-webkit-column-count: 6;
+	-moz-column-count: 6;
+	column-count: 6;
+	-webkit-columns: 6;
+	-moz-columns: 6;
+	columns: 6;
+	text-align: center;
+	padding-left: 0;
+	font-size: 13px;
+	padding-top: 10px;
+}
+
+
+/*
+ *
+ * EDUCATION
+ *
+ */
+
+.split-pane {
+	margin: 15px 0 7px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#education, #research {
+	width: 47%;
+	display: inline-block;
+	font-size: 12px;
+}
+#education ul, #research ul {
+	list-style: none;
+	padding: 0;
+}
+
+.img-with-text {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+#uva { background-image:url('img/UVA.png'); background-size: 70px auto; }
+.border {
+  border: 3px solid #333;
+}
+.img-round {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  margin-right: 20px;
+}
+
+
+/*
+ *
+ * PROJECTS / OPEN-SOURCE
+ *
+ */
+ #research .content {
+ 	margin-top: 5px;
+ }
+ #research .project {
+	font-weight: bold;
+	padding-right: 2px;
+}
+
+
+/* ----------------------------------------------Print---------------------------------------------------------------------*/
+
+@media print {
+	html, body {
+		background-color: #f3f3f3;
+		font-family: 'Lato', sans-serif;
+		-webkit-print-color-adjust: exact;
+	}
+	#cv {
+		width: auto;
+		max-width: none;
+	}
+	.content {
+		font-weight: 300; /* lighter for pdf printing */
+	}
+	.job, #research .project { /* lighter for pdf printing */
+		font-weight: 600;
+	}
+}
+
+
