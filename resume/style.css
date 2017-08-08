@@ -36,6 +36,8 @@ ul {
 footer {
 	padding-top: 10px;
 	text-align: center;
+	color:rgb(85,142,213);
+	font-size: 12px;
 }
 
 .uppercase {
@@ -61,8 +63,8 @@ footer {
 .top {
 	width: 100%;
 	background-color: rgb(85,142,213);
-	color: #fff;
-	padding: 36px 0px 0px 0px;
+	color: #f3f3f3;
+	padding: 31px 0px 0px 0px;
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -76,6 +78,7 @@ footer {
 	line-height: 1.82;
 	transform: scale(.85, 1);
 	font-weight: 200;
+	color:#f3f3f3;
 }
 .contact {
 	text-align: left;
@@ -88,13 +91,8 @@ footer {
 }
 
 .icon{
-	font-size:14px;
-}
-
-.role {
-	padding: 16px 0;
-	letter-spacing: 4px;
-	font-size: 16px;
+	font-size:16px;
+	color:#f3f3f3;
 }
 
 .fa {
@@ -103,10 +101,49 @@ footer {
 
 
 
+/*
+* MAIN TABLE SECTION
+*/
 
 .main{
-	display: inline-block;
+	table-layout: fixed;
 }
+
+#middle {
+	font-size: 12px;
+	position: relative;
+	padding: 0 10px;
+	float:right;
+	max-width: 580px;
+}
+
+.header {
+	color: rgb(85,142,213);
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 16px;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.header:after, .header:before {
+	position: absolute;
+    top: 42%;
+    overflow: hidden;
+    width: 48%;
+    height: 3px;
+    content: '\a0';
+    margin-left: 2%;
+    background-color: rgb(85,142,213);
+}
+.header:before {
+	margin-left: -50%;
+    text-align: right;
+}
+
 
 /*
 *
@@ -114,37 +151,24 @@ footer {
 *
 */
 
-.side {
+#left {
 	float:left;
+	padding: 20px 10px 0px 15px;
+	text-overflow: ellipsis;
+	min-width: 200px;
 }
 
-/*
- *
- * MAIN SECTION GLOBAL STYLING
- *
- */
-
-.middle {
-	font-size: 12px;
-	position: relative;
-	padding: 0 30px;
-	float:right;
+#left .header{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px
 }
-
-.header {
-	color: rgb(210,168,76);
-	text-transform: uppercase;
-	width: 100%;
-	border-bottom: 2px solid rgb(210,168,76);
-	font-size: 16px;
-	position: relative;
+#left .header:after{
+    width: 100%;
+    margin-left:5%;
 }
-.header:after {
-	content: '+';
-	position: absolute;
-	right: 2px;
-	font-size: 24px;
-	bottom: 0;
+#left .header:before{
+	width: 0%;
 }
 
 
@@ -158,118 +182,31 @@ footer {
 	margin: 15px 0;
 }
 .job {
-	margin: 10px 0 3px;
+	margin: 5px 0 3px;
 	font-weight: bold;
+	font-size: 15px;
+	color:rgb(85,142,213);;
+}
+.award{
+	margin: -5px 0px 0px 0px;
+	font-weight: bold;
+	font-size: 15px;
+	color:rgb(85,142,213);;
+}
+.title {
+	font-style: italic;
 	font-size: 13px;
+	color:black;
 }
 .year {
 	position: absolute;
 	right: 30px;
-	font-style: italic;
 	font-weight: normal;
+	color:black;
 }
 .custom-bullet {
 	padding-left: 10px;
 }
-
-
-/*
- *
- * PROJECT SPOTLIGHTS
- *
- */
-
-.project {
-	margin: 12px 0;
-}
-.project-header {
-	font-size: 13px;
-	font-style: italic;
-}
-
-
-/*
- *
- * SKILLS
- *
- */
-
-#skills {
-	margin: 15px 0;
-}
-.skills-list {
-	list-style: none;
-	-webkit-column-count: 6;
-	-moz-column-count: 6;
-	column-count: 6;
-	-webkit-columns: 6;
-	-moz-columns: 6;
-	columns: 6;
-	text-align: center;
-	padding-left: 0;
-	font-size: 13px;
-	padding-top: 10px;
-}
-
-
-/*
- *
- * EDUCATION
- *
- */
-
-.split-pane {
-	margin: 15px 0 7px;
-	display: flex;
-	justify-content: space-between;
-}
-
-#education, #research {
-	width: 47%;
-	display: inline-block;
-	font-size: 12px;
-}
-#education ul, #research ul {
-	list-style: none;
-	padding: 0;
-}
-
-.img-with-text {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-#uva { background-image:url('img/UVA.png'); background-size: 70px auto; }
-.border {
-  border: 3px solid #333;
-}
-.img-round {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  background-color: #fff;
-  position: relative;
-  margin-right: 20px;
-}
-
-
-/*
- *
- * PROJECTS / OPEN-SOURCE
- *
- */
- #research .content {
- 	margin-top: 5px;
- }
- #research .project {
-	font-weight: bold;
-	padding-right: 2px;
-}
-
 
 /* ----------------------------------------------Print---------------------------------------------------------------------*/
 
