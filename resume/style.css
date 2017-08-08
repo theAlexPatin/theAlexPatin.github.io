@@ -80,6 +80,10 @@ footer {
 	font-weight: 200;
 	color:#f3f3f3;
 }
+.name span{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 78px;
+}
 .contact {
 	text-align: left;
 	float:right;
