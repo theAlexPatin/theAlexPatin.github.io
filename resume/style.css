@@ -157,7 +157,7 @@ footer {
 
 #left {
 	float:left;
-	padding: 20px 10px 0px 15px;
+	padding: 0px 10px 0px 15px;
 	text-overflow: ellipsis;
 	min-width: 200px;
 }
@@ -173,6 +173,12 @@ footer {
 }
 #left .header:before{
 	width: 0%;
+}
+.skillset {
+	max-width: 212px;
+	font-size: 15px;
+	word-wrap: normal;
+	padding: 0px 0px 10px 10px;
 }
 
 
