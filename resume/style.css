@@ -77,12 +77,13 @@ footer {
 	left: 0;
 	line-height: 1.82;
 	transform: scale(.85, 1);
-	font-weight: 200;
+	font-weight: 300;
 	color:#f3f3f3;
 }
 .name span{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 78px;
+	font-weight: 400;
 }
 .contact {
 	text-align: left;
@@ -111,12 +112,13 @@ footer {
 
 .main{
 	table-layout: fixed;
+	padding: 10px 0px 0px 0px;
 }
 
 #middle {
 	font-size: 12px;
 	position: relative;
-	padding: 0 10px;
+	padding: 0px 20px 0px 10px;
 	float:right;
 	max-width: 580px;
 }
@@ -129,7 +131,6 @@ footer {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-    z-index: 1;
     overflow: hidden;
     text-align: center;
 }
@@ -145,7 +146,6 @@ footer {
 }
 .header:before {
 	margin-left: -50%;
-    text-align: right;
 }
 
 
@@ -160,6 +160,7 @@ footer {
 	padding: 0px 10px 0px 15px;
 	text-overflow: ellipsis;
 	min-width: 200px;
+	max-width: 230px;
 }
 
 #left .header{
@@ -234,7 +235,7 @@ footer {
 		font-weight: 300; /* lighter for pdf printing */
 	}
 	.job, #research .project { /* lighter for pdf printing */
-		font-weight: 600;
+		font-weight: 500;
 	}
 }
 
