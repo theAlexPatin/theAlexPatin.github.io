@@ -81,9 +81,10 @@ footer {
 	color:#f3f3f3;
 }
 .name span{
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 78px;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	font-size: 65px;
 	font-weight: 400;
+	font-style: bold;
 }
 .contact {
 	text-align: left;
