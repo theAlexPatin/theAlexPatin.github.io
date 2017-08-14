@@ -176,11 +176,27 @@ footer {
 #left .header:before{
 	width: 0%;
 }
-.skillset {
+
+ul.flex-list {
+	display:inline-block; 
+	padding:0; 
 	max-width: 212px;
-	font-size: 15px;
-	word-wrap: normal;
-	padding: 0px 0px 10px 10px;
+	font-size: 14px;
+	padding: 0px 0px 10px 10px;  
+}
+ul.flex-list li { 
+	display:inline 
+}
+ul.flex-list li:after { 
+	content:" "; 
+	letter-spacing:0.9em;  
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAS0lEQVR42mNgIAn8/88Y0HLTDIZBfAwFQROuJYf0XXoEwyA+ikKQTrBk79X/IX1ADKYvPQKbiKEIqCC0D6oQpyJ8JhHlJuJ8RwAAAI/2ZnRRUWVvAAAAAElFTkSuQmCC') center center no-repeat; 
+}
+ul.flex-list li a { 
+	white-space:nowrap 
+}
+ul.flex-list li a:not(:hover) {
+	text-decoration:none 
 }
 
 
@@ -218,6 +234,7 @@ footer {
 }
 .custom-bullet {
 	padding-left: 10px;
+	font-size: 13px;
 }
 
 /* ----------------------------------------------Print---------------------------------------------------------------------*/
