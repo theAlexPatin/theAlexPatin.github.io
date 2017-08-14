@@ -189,7 +189,7 @@ ul.flex-list li {
 }
 ul.flex-list li:after { 
 	content:" "; 
-	letter-spacing:0.9em;  
+	letter-spacing:0.8em;  
 	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAS0lEQVR42mNgIAn8/88Y0HLTDIZBfAwFQROuJYf0XXoEwyA+ikKQTrBk79X/IX1ADKYvPQKbiKEIqCC0D6oQpyJ8JhHlJuJ8RwAAAI/2ZnRRUWVvAAAAAElFTkSuQmCC') center center no-repeat; 
 }
 ul.flex-list li a { 
