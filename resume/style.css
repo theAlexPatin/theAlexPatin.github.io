@@ -35,10 +35,10 @@ ul {
 
 footer {
 	position: absolute;
-	bottom:60px;
+	bottom:10px;
 	float:right;
-	left:-50%;
-	text-align: left;
+	left: 40%;
+	text-align: center;
 	color:rgb(85,142,213);
 	font-size: 15px;
 }
@@ -185,7 +185,7 @@ ul.flex-list {
 	display:inline-block; 
 	padding:0; 
 	max-width: 212px;
-	font-size: 14px;
+	font-size: 15px;
 	padding: 0px 0px 10px 10px;  
 }
 ul.flex-list li { 
@@ -202,6 +202,12 @@ ul.flex-list li a {
 ul.flex-list li a:not(:hover) {
 	text-decoration:none 
 }
+/*
+ul.flex-list::first-letter {
+	color:rgb(85,142,213);;
+	font-style: bold;
+}
+*/
 
 
 /*
