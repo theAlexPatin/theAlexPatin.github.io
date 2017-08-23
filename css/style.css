@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/back2.jpg) no-repeat center top;
+	background: url(../img/back.jpg) no-repeat center top;
 	text-align: center;
 	background-attachment: fixed;
 	background-position: center center;
@@ -246,7 +246,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   top:0%;
 }
-/*                */
 
 
 
@@ -306,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .popupcontent img{
     padding-top: 60%;
-    padding-left: 60%;
+    padding-left: 55%;
     max-width: 500px;
     max-height: 500px;
 }
