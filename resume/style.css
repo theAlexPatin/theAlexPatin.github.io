@@ -161,6 +161,16 @@ footer {
 *
 */
 
+.skill-rows{
+	list-style-type: none;
+	padding: 0px 0px 0px 10px;  
+	display: table;
+	min-height: 936px;
+}
+.skill-rows li{
+	display:table-row;
+}
+
 #left {
 	float:left;
 	padding: 0px 10px 0px 15px;
@@ -171,7 +181,6 @@ footer {
 
 #left .header{
 	text-align: left;
-	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0px 0px 3px 0px;
 }
@@ -187,7 +196,7 @@ ul.flex-list {
 	padding:0; 
 	max-width: 212px;
 	font-size: 13px;
-	padding: 0px 0px 30px 10px;  
+	
 }
 ul.flex-list li { 
     display: inline;
@@ -276,6 +285,9 @@ ul.flex-list li a:not(:hover) {
 	}
 	.name{
 		line-height: 1.85;
+	}
+	.skill-rows{
+		min-height: 936px;
 	}
 }
 

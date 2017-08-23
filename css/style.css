@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
 /*     NEWS POPUP            */
 #overlay {
     position: absolute;
@@ -205,7 +206,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
 /*     SPIDERMAN POPUP       */
 #popup {
     position: absolute;
@@ -277,6 +277,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
 }
+
+
+
 
 
 

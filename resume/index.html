@@ -10,8 +10,11 @@
 	
 	<script language="javascript">
 		window.onload = function () { 
-		    lis = document.getElementById("left").getElementsByTagName("li");
-		    console.log(lis);
+		    var uls = document.getElementsByClassName("flex-list");
+		    var lis = [];
+		    for(var i = 0; i < uls.length; i++){
+		    	lis.push.apply(lis, uls[i].getElementsByTagName("li"));
+		    }
 		    for(var i = 0; i < lis.length; i++){
 		    	var oldString = lis[i].innerHTML;
 		    	var newString = "<span class='first-letter'>"
@@ -45,72 +48,82 @@
 		<section id="main">
 			<table class="main">
 				<td valign="top" id="left">
-					<div class="header">Languages</div>
-					<ul class="flex-list">
-						<li>Python</li>
-						<li>C</li>
-						<li>C++</li>
-						<li>C#</li>
-						<li>Java</li>
-						<li>R</li>
-						<li>HTML/CSS</li>
-						<li>JS</li>
-						<li>Obj-C</li>
-					</ul>
-					<div class="header">Software Tools</div>
-					<ul class="flex-list">
-						<li>AWS</li>
-						<li>Azure</li>
-						<li>Git</li>
-						<li>Apache Spark</li>
-						<li>ElasticSearch</li>
-						<li>TensorFlow</li>
-						<li>Scikit-learn</li>
-						<li>OpenCV</li>
-						<li>SQL/NoSQL</li>
-						<li>Docker</li>
-						<li>Python/JS web-frameworks</li>
-					</ul>
-					<div class="header">Expertise</div>
-					<ul class="flex-list">
-						<li>PaaS</li>
-						<li>Signal Processing</li>
-						<li>Machine Learning</li>
-						<li>Blockchain</li>
-						<li>Natural Language Processing</li>
-						<li>Control Systems</li>
-						<li>Circuit Design</li>
-						<li>Image Processing</li>
-						<li>Embedded Systems</li>
-						<li>Web/Mobile Dev</li>
-					</ul>
-					<div class="header">Soft Skills</div>
-					<ul class="flex-list">
-						<li>Agile Methodology</li>
-						<li>Scrum Tools (JIRA, Axosoft)</li>
-						<li>Slack</li>
-						<li>Grant Writing</li>
-						<li>Lean Startups</li>
-						<li>Business Model Creation</li>
-					</ul>
-					<div class="header">Relevant Courses</div>
-					<ul class="flex-list">
-						<li>Data Structures & Algorithms</li>
-						<li>Artificial Intelligence</li>
-						<li>Computer Vision</li>
-						<li>Systems Programming</li>
-						<li>Discrete Math</li>
-						<li>Programming Lanuage Concepts</li>
-						<li>Computer Org & Design</li>
-					</ul>
-					<div class="header">Other Stuff</div>
-					<ul class="flex-list">
-						<li>Music (Clarinet, Guitar, Production)</li>
-						<li>Club Tennis</li>
-						<li>Hackathons</li>
-						<li>Barista-ing</li>
-						<li>Dorm-room Horticulture</li>
-					</ul>
+					<ul class="skill-rows">
+						<li>
+							<div class="header">Languages</div>
+							<ul class="flex-list">
+								<li>Python</li>
+								<li>C</li>
+								<li>C++</li>
+								<li>C#</li>
+								<li>Java</li>
+								<li>R</li>
+								<li>HTML/CSS</li>
+								<li>JS</li>
+								<li>Obj-C</li>
+							</ul>
+						</li>
+							<div class="header">Software Tools</div>
+							<ul class="flex-list">
+								<li>AWS</li>
+								<li>Azure</li>
+								<li>Git</li>
+								<li>Apache Spark</li>
+								<li>ElasticSearch</li>
+								<li>TensorFlow</li>
+								<li>Scikit-learn</li>
+								<li>OpenCV</li>
+								<li>SQL/NoSQL</li>
+								<li>Docker</li>
+								<li>Python/JS web-frameworks</li>
+							</ul>
+						<li>
+							<div class="header">Expertise</div>
+							<ul class="flex-list">
+								<li>PaaS</li>
+								<li>Signal Processing</li>
+								<li>Machine Learning</li>
+								<li>Blockchain</li>
+								<li>Natural Language Processing</li>
+								<li>Control Systems</li>
+								<li>Circuit Design</li>
+								<li>Image Processing</li>
+								<li>Embedded Systems</li>
+								<li>Web/Mobile Dev</li>
+							</ul>
+						</li>
+							<div class="header">Soft Skills</div>
+							<ul class="flex-list">
+								<li>Agile Methodology</li>
+								<li>Scrum Tools (JIRA, Axosoft)</li>
+								<li>Slack</li>
+								<li>Grant Writing</li>
+								<li>Lean Startups</li>
+								<li>Business Model Creation</li>
+							</ul>
+						<li>
+							<div class="header">Relevant Courses</div>
+							<ul class="flex-list">
+								<li>Data Structures & Algorithms</li>
+								<li>Artificial Intelligence</li>
+								<li>Computer Vision</li>
+								<li>Systems Programming</li>
+								<li>Discrete Math</li>
+								<li>Programming Lanuage Concepts</li>
+								<li>Computer Org & Design</li>
+							</ul>
+						</li>
+						<li>
+							<div class="header">Other Stuff</div>
+							<ul class="flex-list">
+								<li>Music (Clarinet, Guitar, Production)</li>
+								<li>Club Tennis</li>
+								<li>Hackathons</li>
+								<li>Barista-ing</li>
+								<li>Dorm-room Horticulture</li>
+							</ul>
+						</li>
+					</ul>	
 				</td>
 				<td valign="top" id="middle">
 					<div id="education">
@@ -154,7 +167,7 @@
 						<div class="content">
 							<div class="job">Charity Labs: <span class="title">Product Development Consultant</span><span class="year">Jun 2017 - Now</span></div>
 							<ul class="custom-bullet">
-								<li>Built web app for online, charity-specific, 50/50 auctions using Django, Stripe, and Heroku</li>
+								<li>Built web app for charity-specific, 50/50 auctions using Django, Stripe, PostgreSQL, and Heroku</li>
 								<li>Raised over $25,000 for the Against Malaria Foundation during beta tests</li>
 							</ul>
 							<div class="job">Lunar Lion: <span class="title">Guidance, Navigation, and Controls Lead Engineer</span><span class="year">Apr 2015 - Jan 2016</span></div>
