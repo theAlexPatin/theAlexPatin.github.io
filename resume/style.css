@@ -259,7 +259,6 @@ ul.flex-list li a:not(:hover) {
 @media print {
 	html, body {
 		background-color: #f3f3f3;
-		font-family: 'Lato', sans-serif;
 		-webkit-print-color-adjust: exact;
 	}
 	#cv {
@@ -267,10 +266,16 @@ ul.flex-list li a:not(:hover) {
 		max-width: none;
 	}
 	.content {
-		font-weight: 300; /* lighter for pdf printing */
+		font-weight: 400; /* lighter for pdf printing */
+	}
+	.title{
+		font-weight: 400;
 	}
 	.job, #research .project { /* lighter for pdf printing */
 		font-weight: 500;
+	}
+	.name{
+		line-height: 1.85;
 	}
 }
 
