@@ -117,11 +117,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer i {
 	font-size: 40px;
-	color: #4A4A4A
+	color: #4A4A4A;
 }
 
 #footer i:hover {
-	color: #9E9E9E
+	color: #9E9E9E;
 }
 
 
@@ -143,7 +143,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #news-popup {
     border-radius: 25px;
-    font-family:'Raleway';
     position: absolute;
     text-align: center;
     top: 50%;
@@ -181,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel-inner{
     height: 600px;
-    background-color: rgba(200,200,200,0.2);
+    background-color: rgba(200,200,200,0.3);
 }
 
 .carousel-inner img{
@@ -194,13 +193,13 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-caption{
     top:90%;
     color:#ffffff;
+    margin:auto;
     text-shadow: 0 0 5px #000000;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.15em;
 }
 .carousel-caption p{
     font-style: italic;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .carousel-align {
