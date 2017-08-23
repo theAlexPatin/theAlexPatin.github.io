@@ -138,6 +138,7 @@ footer {
 	font-weight: 400;
     overflow: hidden;
     text-align: center;
+    margin: 0px 0px -5px 0px;
 }
 .header:after, .header:before {
 	position: absolute;
@@ -171,7 +172,8 @@ footer {
 #left .header{
 	text-align: left;
 	padding-left: 10px;
-	padding-right: 10px
+	padding-right: 10px;
+	margin: 0px 0px 3px 0px;
 }
 #left .header:after{
     width: 100%;
@@ -182,14 +184,18 @@ footer {
 }
 
 ul.flex-list {
-	display:inline-block; 
 	padding:0; 
 	max-width: 212px;
-	font-size: 15px;
-	padding: 0px 0px 10px 10px;  
+	font-size: 13px;
+	padding: 0px 0px 25px 10px;  
 }
 ul.flex-list li { 
-	display:inline 
+    display: inline;
+    overflow: hidden;
+    word-break: break-word;
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
 }
 ul.flex-list li:after { 
 	content:" "; 
@@ -202,12 +208,13 @@ ul.flex-list li a {
 ul.flex-list li a:not(:hover) {
 	text-decoration:none 
 }
-/*
-ul.flex-list::first-letter {
-	color:rgb(85,142,213);;
-	font-style: bold;
+
+.first-letter{
+	font-size: 125%;
+	margin-top: -10;
+	margin-bottom: -10;
 }
-*/
+
 
 
 /*
@@ -220,7 +227,7 @@ ul.flex-list::first-letter {
 	margin: 15px 0;
 }
 .job {
-	margin: 5px 0 3px;
+	margin: 5px 0px 3px;
 	font-weight: bold;
 	font-size: 15px;
 	color:rgb(85,142,213);;

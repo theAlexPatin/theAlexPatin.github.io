@@ -7,6 +7,22 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:200,300,400|Josefin+Sans:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:200,300,400|Saira+Semi+Condensed" rel="stylesheet">
+	
+	<script language="javascript">
+		window.onload = function () { 
+		    lis = document.getElementById("left").getElementsByTagName("li");
+		    console.log(lis);
+		    for(var i = 0; i < lis.length; i++){
+		    	var oldString = lis[i].innerHTML;
+		    	var newString = "<span class='first-letter'>"
+			    + oldString.charAt(0)
+			    + "</span>"
+			    + oldString.slice(1);
+		    	lis[i].innerHTML = newString;
+		    }
+		};
+	</script>
+	
 </head>
 
 <body>
@@ -36,41 +52,43 @@
 						<li>C++</li>
 						<li>C#</li>
 						<li>Java</li>
+						<li>R</li>
 						<li>HTML/CSS</li>
 						<li>JS</li>
 						<li>Obj-C</li>
 					</ul>
-					<div class="header">Technologies</div>
+					<div class="header">Software Tools</div>
 					<ul class="flex-list">
 						<li>AWS</li>
 						<li>Azure</li>
 						<li>Git</li>
-						<li>Flask</li>
-						<li>DynamoDB</li>
-						<li>Tensorflow</li>
-						<li>OpenCV</li>
 						<li>Apache Spark</li>
-						<li>Embedded Systems</li>
-						<li>Mobile Development</li>
+						<li>ElasticSearch</li>
+						<li>TensorFlow</li>
 						<li>Scikit-learn</li>
+						<li>OpenCV</li>
+						<li>SQL/NoSQL</li>
+						<li>Python/JS web-frameworks</li>
 					</ul>
 					<div class="header">Expertise</div>
 					<ul class="flex-list">
-						<li>FFT</li>
-						<li>DWT</li>
+						<li>PaaS</li>
+						<li>Signal Processing</li>
 						<li>Machine Learning</li>
 						<li>Blockchain</li>
+						<li>Natural Language Processing</li>
 						<li>Control Systems</li>
 						<li>Circuit Design</li>
-						<li>Image-Processing</li>
-						<li>Natural Language-Processing</li>
+						<li>Image Processing</li>
+						<li>Embedded Systems</li>
+						<li>Web/Mobile Development</li>
 					</ul>
 					<div class="header">Soft Skills</div>
 					<ul class="flex-list">
-						<li>Agile Methodologies</li>
+						<li>Agile Methodology</li>
 						<li>Scrum Tools (JIRA)</li>
 						<li>Slack</li>
-						<li>Grant-writing</li>
+						<li>Grant Writing</li>
 						<li>Lean Startups</li>
 						<li>Business Model Creation</li>
 					</ul>
@@ -81,8 +99,8 @@
 						<li>Computer Vision</li>
 						<li>Systems Programming</li>
 						<li>Discrete Math</li>
-						<li>Programming-Lanuage Concepts</li>
-						<li>Computer-Org & Design</li>
+						<li>Programming Lanuage Concepts</li>
+						<li>Computer Org & Design</li>
 					</ul>
 					<div class="header">Other Stuff</div>
 					<ul class="flex-list">
@@ -91,7 +109,6 @@
 						<li>Hackathons</li>
 						<li>Barista-ing</li>
 						<li>Dorm-room Horticulture</li>
-						<li>Creating complex, but useless software</li>
 					</ul>
 				</td>
 				<td valign="top" id="middle">
@@ -111,7 +128,7 @@
 								<li>Designed EEG biopotential amplifiers using Multisim and developed a DWT/SVM mental state classifier using C++/Tensorflow embedded on a TI-CC430 MCU</li>
 								<li>Garnered $21,000 in non-equity financing through several grants, competitions, and awards</li>
 							</ul>
-							<div class="job">Microsoft: <span class="title">Student Ambassador</span><span class="year">Aug 2015 - Now</span></div>
+							<div class="job">Microsoft: <span class="title">Student Partner to Penn State</span><span class="year">Aug 2015 - Now</span></div>
 							<ul class="custom-bullet">
 								<li>Organized 13 tech workshops on MS developer tools for college students</li>
 								<li>Mastered tools including Azure, MS Cognitive Services, Windows IoT toolkits, etc</li>
