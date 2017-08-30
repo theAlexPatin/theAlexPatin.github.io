@@ -120,6 +120,17 @@ footer {
 	padding: 10px 0px 0px 0px;
 }
 
+.center-list{
+	margin-top:-5px;	
+	list-style-type: none;
+	display: table;
+	min-height: 940px;
+	max-height: 940px;
+}
+.center-list li{
+	display:table-row;
+}
+
 #middle {
 	font-size: 12px;
 	position: relative;
@@ -162,11 +173,12 @@ footer {
 */
 
 .skill-rows{
-	margin-top:-2px;	
+	margin-top:-5px;	
 	list-style-type: none;
 	padding: 0px 0px 0px 10px;  
 	display: table;
-	min-height: 938px;
+	min-height: 947px;
+	max-height: 947px;
 }
 .skill-rows li{
 	display:table-row;
@@ -239,14 +251,17 @@ ul.flex-list li a:not(:hover) {
 .job {
 	margin: 5px 0px 3px;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 14px;
 	color:rgb(85,142,213);;
 }
 .award{
 	margin: -5px 0px 0px 0px;
-	font-weight: bold;
-	font-size: 15px;
+	font-size: 14px;
 	color:rgb(85,142,213);
+	font-style: normal;
+}
+.award span{
+	font-style: normal;
 }
 .title {
 	font-style: italic;
@@ -262,6 +277,9 @@ ul.flex-list li a:not(:hover) {
 .custom-bullet {
 	padding-left: 10px;
 	font-size: 13px;
+}
+.custom-bullet li{
+	display: list-item;
 }
 
 /* ----------------------------------------------Print---------------------------------------------------------------------*/
@@ -288,7 +306,7 @@ ul.flex-list li a:not(:hover) {
 		line-height: 1.85;
 	}
 	.skill-rows{
-		min-height: 938px;
+		min-height: 948px;
 	}
 }
 
