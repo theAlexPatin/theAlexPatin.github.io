@@ -124,8 +124,8 @@ footer {
 	margin-top:-5px;	
 	list-style-type: none;
 	display: table;
-	min-height: 940px;
-	max-height: 940px;
+	min-height: 944px;
+	max-height: 944px;
 }
 .center-list li{
 	display:table-row;
@@ -249,9 +249,9 @@ ul.flex-list li a:not(:hover) {
 	margin: 15px 0;
 }
 .job {
-	margin: 5px 0px 3px;
+	margin: 5px 0px 2px;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 15px;
 	color:rgb(85,142,213);;
 }
 .award{
@@ -280,6 +280,7 @@ ul.flex-list li a:not(:hover) {
 }
 .custom-bullet li{
 	display: list-item;
+	margin: 0px 0px 0px -10px;
 }
 
 /* ----------------------------------------------Print---------------------------------------------------------------------*/
@@ -306,6 +307,9 @@ ul.flex-list li a:not(:hover) {
 		line-height: 1.85;
 	}
 	.skill-rows{
+		min-height: 948px;
+	}
+	.center-list{
 		min-height: 948px;
 	}
 }
