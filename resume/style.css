@@ -76,6 +76,7 @@ footer {
 	letter-spacing: 4px;
 	font-size: 64px;
 	float:left;
+	padding-left: 2px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -95,9 +96,10 @@ footer {
 	float:right;
 	font-size: 14px;
 	font-weight: 300;
+	padding-right: 20px;
 }
 .contact td {
-	padding:0 13px;
+	padding:0 10px;
 }
 
 .icon{
@@ -124,8 +126,7 @@ footer {
 	margin-top:-5px;	
 	list-style-type: none;
 	display: table;
-	min-height: 944px;
-	max-height: 944px;
+	min-height: 930px;
 }
 .center-list li{
 	display:table-row;
@@ -280,7 +281,7 @@ ul.flex-list li a:not(:hover) {
 }
 .custom-bullet li{
 	display: list-item;
-	margin: 0px 0px 0px -10px;
+	margin: 0px 0px 0px -5px;
 }
 
 /* ----------------------------------------------Print---------------------------------------------------------------------*/
@@ -310,7 +311,7 @@ ul.flex-list li a:not(:hover) {
 		min-height: 948px;
 	}
 	.center-list{
-		min-height: 948px;
+		min-height: 933px;
 	}
 }
 
