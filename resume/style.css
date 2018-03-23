@@ -76,6 +76,7 @@ footer {
 	letter-spacing: 4px;
 	font-size: 64px;
 	float:left;
+	padding-left: 2px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -95,9 +96,10 @@ footer {
 	float:right;
 	font-size: 14px;
 	font-weight: 300;
+	padding-right: 20px;
 }
 .contact td {
-	padding:0 13px;
+	padding:0 10px;
 }
 
 .icon{
@@ -118,6 +120,16 @@ footer {
 .main{
 	table-layout: fixed;
 	padding: 10px 0px 0px 0px;
+}
+
+.center-list{
+	margin-top:-5px;	
+	list-style-type: none;
+	display: table;
+	min-height: 930px;
+}
+.center-list li{
+	display:table-row;
 }
 
 #middle {
@@ -162,11 +174,12 @@ footer {
 */
 
 .skill-rows{
-	margin-top:-2px;	
+	margin-top:-5px;	
 	list-style-type: none;
 	padding: 0px 0px 0px 10px;  
 	display: table;
-	min-height: 938px;
+	min-height: 947px;
+	max-height: 947px;
 }
 .skill-rows li{
 	display:table-row;
@@ -237,16 +250,19 @@ ul.flex-list li a:not(:hover) {
 	margin: 15px 0;
 }
 .job {
-	margin: 5px 0px 3px;
+	margin: 5px 0px 2px;
 	font-weight: bold;
 	font-size: 15px;
 	color:rgb(85,142,213);;
 }
 .award{
 	margin: -5px 0px 0px 0px;
-	font-weight: bold;
-	font-size: 15px;
+	font-size: 14px;
 	color:rgb(85,142,213);
+	font-style: normal;
+}
+.award span{
+	font-style: normal;
 }
 .title {
 	font-style: italic;
@@ -262,6 +278,10 @@ ul.flex-list li a:not(:hover) {
 .custom-bullet {
 	padding-left: 10px;
 	font-size: 13px;
+}
+.custom-bullet li{
+	display: list-item;
+	margin: 0px 0px 0px -5px;
 }
 
 /* ----------------------------------------------Print---------------------------------------------------------------------*/
@@ -288,7 +308,10 @@ ul.flex-list li a:not(:hover) {
 		line-height: 1.85;
 	}
 	.skill-rows{
-		min-height: 938px;
+		min-height: 948px;
+	}
+	.center-list{
+		min-height: 933px;
 	}
 }
 
