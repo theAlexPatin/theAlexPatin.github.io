@@ -179,6 +179,12 @@
 	<script src="js/particles.js"></script>
 	<script src="js/app.js"></script>
 	<script>
+		var host = "thealexpatin.com"
+		if (window.location.host == host && window.location.protocol != "https:") {
+		  window.location.protocol = "https:"
+		}
+	</script>
+	<script>
 	    $(function(){
 	    	var count = 0;
 	    	var popup = document.getElementById("popup");
