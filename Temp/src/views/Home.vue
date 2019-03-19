@@ -60,9 +60,10 @@ export default {
     left: 50%
     max-width: 460px
     margin: -10% auto auto -230px
-    font-family: ProximaNova-Regular
+    font-weight: 200
     font-size: 25px
     color: #FFFFFF
+    line-height: 37px
     letter-spacing: 1px
     text-align: center
 

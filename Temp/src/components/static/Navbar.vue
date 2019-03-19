@@ -29,7 +29,7 @@ export default {
 
 <style lang="sass">
 .navbar
-  z-index: 15
+  z-index: 25
   color: white
   position: absolute
   display: flex
@@ -52,8 +52,13 @@ export default {
     &:first-child
       margin-left: 0px
 
+    &:hover
+      color: darken(white, 20%)
+
   .hamburger
     visibility: hidden
+    .bm-burger-bars
+      background-color: white
 
     @media (max-width: 720px)
       visibility: visible

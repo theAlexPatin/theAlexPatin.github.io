@@ -26,7 +26,7 @@ export default {
   justify-content: space-around
   font-size: 35px
   overflow: hidden
-  padding: 0 20%
+  padding: 0 20% 20px
 
   @media(max-width: 900px)
     padding: 0
@@ -34,7 +34,19 @@ export default {
 
   a
     color: white
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+    transition: all 0.5s ease
+
+    &:hover
+      color: darken(white, 20%)
 
     &:nth-child(even)
       color: #bfceff
+
+      &:hover
+        color: darken(#bfceff, 10%)
+
+
 </style>

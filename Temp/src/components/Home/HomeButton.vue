@@ -50,10 +50,10 @@ export default {
     height: 66px
     line-height: 66px
     text-align: center
-    -webkit-transition: all 1s ease
-    -moz-transition: all 1s ease
-    -o-transition: all 1s ease
-    transition: all 1s ease
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+    transition: all 0.5s ease
 
     &:hover, &:active
       border-color: #ff8080
@@ -71,10 +71,10 @@ export default {
       height: 100%
       border-radius: 20px
       background: rgba(59,59,59,0.56)
-      -webkit-transition: all 1s ease
-      -moz-transition: all 1s ease
-      -o-transition: all 1s ease
-      transition: all 1s ease
+      -webkit-transition: all 0.5s ease
+      -moz-transition: all 0.5s ease
+      -o-transition: all 0.5s ease
+      transition: all 0.5s ease
 
       &:hover, &:active
         height: 100% !important
