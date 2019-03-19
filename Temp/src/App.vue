@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="thealexpatin">
-    <Navbar/>
+    <Navbar class="navbar"/>
     <router-view/>
   </div>
 </template>

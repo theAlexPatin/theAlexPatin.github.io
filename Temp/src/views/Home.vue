@@ -1,5 +1,6 @@
 <template>
   <div class="home-view">
+    <social/>
     <div class="column tech-side">
       <div class="overlay">
         <div class="column-content">
@@ -10,7 +11,9 @@
           <p>Helping small companies build quickly for sustainable growth</p>
         </div>
       </div>
-
+    </div>
+    <div class="headline">
+      I’m an innovative engineer working on new tech and creative ventures
     </div>
     <div class="column music-side">
       <div class="overlay">
@@ -28,10 +31,12 @@
 
 <script>
 import HomeButton from '@/components/Home/HomeButton'
+import Social from '@/components/Home/Social'
 export default {
   name: 'HomeView',
   components: {
-    HomeButton
+    HomeButton,
+    Social
   }
 }
 
@@ -49,6 +54,23 @@ export default {
     flex-direction: column
     min-height: 100%
 
+  .headline
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 460px
+    margin: -10% auto auto -230px
+    font-family: ProximaNova-Regular
+    font-size: 25px
+    color: #FFFFFF
+    letter-spacing: 1px
+    text-align: center
+
+    @media (max-width: 1200px)
+      margin: -25px auto auto -170px
+      max-width: 340px
+      font-size: 20px
+      display: none
 
   .column
     width: 50%
@@ -88,7 +110,7 @@ export default {
         height: 45%
 
         @media (max-width: 1200px)
-          height: 30%
+          height: 35%
 
         @media (max-width: 600px)
           margin-bottom: 60px

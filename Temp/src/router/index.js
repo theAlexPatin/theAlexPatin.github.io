@@ -9,6 +9,7 @@ const router = new Router({
   mode: 'history',
   routes: [
     {
+      name: 'Home',
       path: '/',
       component: Home
     },
