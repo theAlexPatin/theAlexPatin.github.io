@@ -65,6 +65,7 @@ export default {
     color: #FFFFFF
     line-height: 37px
     letter-spacing: 1px
+    text-shadow: -4px 4px 3px #000
     text-align: center
 
     @media (max-width: 1200px)
@@ -83,7 +84,7 @@ export default {
 
 
     .overlay
-      background: rgba(0,0,0,.33)
+      background: rgba(0,0,0,.4)
       box-shadow: inset 0 0 20em 0.2em #000
       width: 100%
       height: 100vh
@@ -121,7 +122,8 @@ export default {
         font-family: TisaPro-Medi
         font-size: 20px
         color: #FFFFFF
-        width: 300px
+        text-shadow: -2px 2px 6px #000
+        width: 400px
         line-height: 33px
         letter-spacing: 0.4px
         text-align: center
@@ -129,6 +131,7 @@ export default {
         @media (max-width: 600px)
           font-size: 16px
           line-height: 25px
+          width: 320px
 
 
   .tech-side

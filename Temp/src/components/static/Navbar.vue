@@ -36,6 +36,7 @@ export default {
   flex-direction: row
   padding: 30px 40px
   width: calc(100% - 80px)
+  overflow: hidden
 
   a
     font-family: ProximaNova-Regular
