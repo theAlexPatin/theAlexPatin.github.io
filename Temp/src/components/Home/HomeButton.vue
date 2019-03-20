@@ -37,7 +37,7 @@ export default {
 
   .wrapper
     cursor: pointer
-    border: 4px solid #E2DFDF
+    border: 4px solid white
     -webkit-background-size: contain
     -moz-background-size: contain
     -o-background-size: contain
@@ -59,7 +59,7 @@ export default {
       border-color: #ff8080
 
     @media (max-width: 600px)
-      border: 3px solid #E2DFDF
+      border: 3px solid white
       border-radius: 16px
       font-size: 22px
       height: 50px

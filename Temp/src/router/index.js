@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import NotFoundView from '@/views/404'
-import Home from '@/views/Home'
 
 Vue.use(Router)
 
@@ -11,7 +10,14 @@ const router = new Router({
     {
       name: 'Home',
       path: '/',
-      component: Home
+      component: () =>
+            import(/* webpackChunkName: "home" */ '@/views/Home'),
+    },
+    {
+      name: 'About',
+      path: '/about',
+      component: () =>
+            import(/* webpackChunkName: "about" */ '@/views/About'),
     },
     {
       path: '/*',

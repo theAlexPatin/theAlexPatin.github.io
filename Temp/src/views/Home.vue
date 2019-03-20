@@ -119,17 +119,17 @@ export default {
 
       p
         margin: 10px auto
-        font-family: TisaPro-Medi
-        font-size: 20px
+        font-family: TisaPro-Light
+        font-size: 22px
         color: #FFFFFF
-        text-shadow: -2px 2px 6px #000
+        //text-shadow: -1px 1px 1px #000
         width: 400px
         line-height: 33px
-        letter-spacing: 0.4px
+        letter-spacing: 0.7px
         text-align: center
 
         @media (max-width: 600px)
-          font-size: 16px
+          font-size: 18px
           line-height: 25px
           width: 320px
 

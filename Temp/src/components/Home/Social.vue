@@ -1,11 +1,11 @@
 <template>
   <div class="social">
-    <a href="" target="_blank"><i class="fab fa-youtube"/></a>
-    <a href="" target="_blank"><i class="fab fa-github"/></a>
-    <a href="" target="_blank"><i class="fab fa-linkedin"/></a>
-    <a href="" target="_blank"><i class="fab fa-patreon"/></a>
-    <a href="" target="_blank"><i class="fab fa-soundcloud"/></a>
-    <a href="" target="_blank"><i class="fab fa-instagram"/></a>
+    <a href="https://twitter.com/theAlexPatin" target="_blank"><i class="fab fa-twitter"/></a>
+    <a href="https://github.com/theAlexPatin" target="_blank"><i class="fab fa-github"/></a>
+    <a href="https://linkedin.com/in/theAlexPatin" target="_blank"><i class="fab fa-linkedin"/></a>
+    <a href="https://www.patreon.com/theAlexPatin" target="_blank"><i class="fab fa-patreon"/></a>
+    <a href="https://soundcloud.com/thealexpatin" target="_blank"><i class="fab fa-soundcloud"/></a>
+    <a href="https://instagram.com/thealexpatin" target="_blank"><i class="fab fa-instagram"/></a>
   </div>
 </template>
 <script>
@@ -26,7 +26,7 @@ export default {
   justify-content: space-around
   font-size: 35px
   overflow: hidden
-  padding: 0 20% 20px
+  padding: 0 20% 30px
 
   @media(max-width: 900px)
     padding: 0
@@ -40,13 +40,9 @@ export default {
     transition: all 0.5s ease
 
     &:hover
-      color: darken(white, 20%)
+      color: lighten(#ff8080, 5%)
 
-    &:nth-child(even)
-      color: #bfceff
-
-      &:hover
-        color: darken(#bfceff, 10%)
+  
 
 
 </style>
