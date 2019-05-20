@@ -6,7 +6,7 @@ import App from './App'
 import polyfill from 'babel-polyfill'
 import router from './router'
 // Include compiled sass file
-import './style/main.css'
+import './style/main.sass'
 
 Vue.config.productionTip = false
 Vue.use(VueHead)

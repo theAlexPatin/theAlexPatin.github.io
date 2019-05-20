@@ -20,6 +20,18 @@ const router = new Router({
             import(/* webpackChunkName: "about" */ '@/views/About'),
     },
     {
+      name: 'Music',
+      path: '/music',
+      component: () =>
+            import(/* webpackChunkName: "music" */ '@/views/Music'),
+    },
+    {
+      name: 'Tech',
+      path: '/tech',
+      component: () =>
+            import(/* webpackChunkName: "tech" */ '@/views/Tech'),
+    },
+    {
       path: '/*',
       name: 'Not Found',
       component: NotFoundView

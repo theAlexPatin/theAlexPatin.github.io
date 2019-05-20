@@ -3,7 +3,7 @@
     <div class="content">
       <div class="about-image"/>
       <p>
-        I'm an engineer passionate about music and building technology
+        I'm a Boston-based engineer, passionate about music and building technology
         for the future.
       </p>
       <p>
@@ -13,7 +13,8 @@
       </p>
       <p>
         As a musician, I enjoy producing indie, pop, and R&amp;B music for myself and others as well as
-        performing live &dash; I play guitar, clarinet, piano, and attempt to sing.
+        performing live &dash; I play guitar, clarinet, piano, and attempt to sing. Check out some of my stuff
+        on <a href="https://soundcloud.com/theAlexPatin" target="_blank">Soundcloud</a>.
       </p>
       <p>
         What's more interesting is combining the two passions. I previously started a company called
@@ -21,10 +22,10 @@
         get motivated, or reduce stress.
       </p>
       <p>
-        If you like what I'm doing and you're interested in learning more, feel free to
+        If you like what I'm doing or if you're interested in learning more, feel free to
         <a href="javascript:void(0)" @click="">Contact Me</a> for collaborations or rates.
         You can also support me for as little as $1/month on
-        <a target="_blank" href="https://www.patreon.com/theAlexPatin">Patreon</a>
+        <a target="_blank" href="https://www.patreon.com/theAlexPatin">Patreon</a>.
       </p>
     </div>
   </div>
@@ -42,6 +43,7 @@ export default {
     width: 50%
     margin: auto
     padding-top: 120px
+    padding-bottom: 100px
 
     @media(max-width: 740px)
       width: 90%

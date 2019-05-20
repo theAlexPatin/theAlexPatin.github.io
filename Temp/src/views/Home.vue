@@ -5,7 +5,7 @@
       <div class="overlay">
         <div class="column-content">
           <HomeButton class="home-button"
-            :link="'home'"
+            :link="'Tech'"
             :text="'TECH'"
             :background="'tech'"/>
           <p>Helping small companies build quickly for sustainable growth</p>
@@ -19,10 +19,10 @@
       <div class="overlay">
         <div class="column-content">
           <HomeButton class="home-button"
-            :link="'home'"
+            :link="'Music'"
             :text="'MUSIC'"
             :background="'music'"/>
-          <p>Professional production for indie, pop, and R&amp;B Artists</p>
+          <p>Professional production for indie, pop, and R&amp;B artists</p>
         </div>
       </div>
     </div>
@@ -135,17 +135,29 @@ export default {
 
 
   .tech-side
-    background: url('../assets/landing/tech.jpg') no-repeat center
+    background: url('../assets/landing/tech.jpg') no-repeat
+    background-position: center
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
     background-size: cover
 
+    @media (max-width: 1200px)
+      background-position: center -200px
+    @media (max-width: 675px)
+      background-position: center
+
   .music-side
-    background: url('../assets/landing/music.jpg') no-repeat center
+    background: url('../assets/landing/music.jpg') no-repeat
+    background-position: center
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
     background-size: cover
+
+    @media (max-width: 1200px)
+      background-position: center -150px
+    @media (max-width: 675px)
+      background-position: center
 
 </style>

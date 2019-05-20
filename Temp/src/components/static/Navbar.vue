@@ -2,17 +2,16 @@
   <div class="navbar">
     <push class="hamburger" right>
       <a href="javscript:void(0)"
-          @click="$router.push({ name: 'about' })">About Me</a>
+          @click="$router.push({ path: '/about' })">About Me</a>
       <a href="javscript:void(0)"
-          @click="$router.push({ name: 'tech' })">Tech</a>
+          @click="$router.push({ path: '/tech' })">Tech</a>
       <a href="javscript:void(0)"
-          :class="{ active: $route.name === 'Music'}"
-          @click="$router.push({ name: 'music' })">Music</a>
+          @click="$router.push({ path: '/music' })">Music</a>
       <a href="https://medium.com/@theAlexPatin" target="_blank">Blog</a>
-      <a href="javascript:void(0)" @click="">Contact</a>
+      <a href="mailto:me@thealexpatin.com" @click="">Contact</a>
     </push>
     <div @click="$router.push({ name: 'Home' })" class="left">
-      <img src="../../assets/monogram.png"/>
+      <img src="../../assets/monogram-circle.png"/>
       <h1>ALEX PATIN</h1>
     </div>
     <div class="separator"/>
@@ -29,7 +28,7 @@
           @click="$router.push({ path: '/tech' })"
           :class="{ active: $route.name === 'Tech'}">Tech</a>
       <a href="https://medium.com/@theAlexPatin" target="_blank">Blog</a>
-      <a href="javascript:void(0)" @click="">Contact</a>
+      <a href="mailto:me@thealexpatin.com" @click="">Contact</a>
     </div>
   </div>
 </template>
@@ -95,8 +94,9 @@ export default {
       min-width: 180px
 
     img
-      width: 75px
+      width: 60px
       float: left
+      margin-top: -10px
 
       @media (max-width: 940px)
         width: 45px
