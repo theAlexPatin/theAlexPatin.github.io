@@ -11,6 +11,7 @@
     "ladda": "^2.0.1",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
+    "vodal": "^2.4.0",
     "vue": "^2.5.17",
     "vue-bulma-accordion": "^0.4.8",
     "vue-burger-menu": "^2.0.1",

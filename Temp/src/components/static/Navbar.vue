@@ -28,7 +28,7 @@
           @click="$router.push({ path: '/tech' })"
           :class="{ active: $route.name === 'Tech'}">Tech</a>
       <a href="https://medium.com/@theAlexPatin" target="_blank">Blog</a>
-      <a href="mailto:me@thealexpatin.com" @click="">Contact</a>
+      <a href="javascript:void(0)" @click="showContact">Contact</a>
     </div>
   </div>
 </template>
@@ -38,6 +38,11 @@ import { Push } from 'vue-burger-menu'
 export default {
   components: {
     Push
+  },
+  methods: {
+    showContact() {
+      this.$root.$emit('showContact')
+    }
   }
 }
 </script>

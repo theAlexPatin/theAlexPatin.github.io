@@ -78,9 +78,20 @@ body
     box-shadow: none
     transition: none
 
+    &:hover
+      background: $brand-color
+      color: white
+      transition: all .3s ease
+
+
     &.-accent
       border-color: $brand-accent
       color: $brand-accent
+
+      &:hover
+        background: $brand-accent
+        color: white
+
 
     +on-event
       box-shadow: none

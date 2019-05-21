@@ -1,5 +1,6 @@
 <template>
   <div class="container" id="thealexpatin">
+    <contact :show="showContact" @close="showContact = false"/>
     <vue-progress-bar></vue-progress-bar>
     <Navbar class="navbar"/>
     <transition name="fade" mode="out-in">
@@ -12,11 +13,23 @@
 <script>
 import Navbar from '@/components/static/Navbar'
 import Footer from '@/components/static/Footer'
+import Contact from '@/components/static/Contact'
 export default {
   name: 'HomeView',
   components: {
     Navbar,
-    Footer
+    Footer,
+    Contact
+  },
+  data() {
+    return {
+      showContact: true
+    }
+  },
+  mounted() {
+    this.$root.$on('showContact', () => {
+      this.showContact = true
+    })
   }
 }
 </script>

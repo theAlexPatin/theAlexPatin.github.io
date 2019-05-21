@@ -80,7 +80,7 @@ export default {
         'Breedlove Persuit Concert CE',
         'Cordoba C5 (Classical)',
         'Epiphone Riviera Hollowbody',
-        'Buffet Custom Clarinet',
+        'Yamaha Custom SE Clarinet',
         'StudioLogic SL88 Piano/MIDI',
         'Akai Mini MPK II',
       ],
