@@ -72,6 +72,8 @@ export default {
         'Yamaha HS8 Monitors',
         'Line6 Spider Jam',
         'Line6 POD HDX',
+        'StudioLogic SL88 Piano/MIDI',
+        'Akai Mini MPK II',
       ],
       instrumnets: [
         'Fender Stratocaster (HSS American Elite)',
@@ -98,7 +100,7 @@ export default {
       title: 'Software',
       list: this.software
     }, {
-      title: 'Instruments/Controllers',
+      title: 'Instruments',
       list: this.instrumnets
     }, {
       title: 'Mic List',
@@ -119,6 +121,10 @@ export default {
   display: grid
   grid-template-columns: 30% 30% 30%
   grid-template-areas: "gear services pricing"
+
+  @media(max-width: 1000px)
+    grid-template-columns: 90%
+    grid-template-areas: "gear" "services" "pricing"
 
 
   .service
@@ -158,7 +164,7 @@ export default {
       .footnote
         font-style: italic
         font-size: 14px
-        width: 250px
+        width: 200px
         margin-right: auto
         margin-left: auto
 
@@ -177,6 +183,9 @@ export default {
     vertical-align: top
     box-shadow: rgba(#d2d2d2, 0.2) 0px 5px 5px 0px, #e7e7e7 0px 0px 0px 1px
     padding-bottom: 20px
+
+    @media(max-width: 1000px)
+      box-shadow: rgba(#d2d2d2, 0.2) 0px 5px 5px 0px, #323232 0px 0px 0px 1px
 
     .list
       margin-top: -10px
@@ -213,9 +222,15 @@ export default {
     &:first-child
       border-radius: 12px 0 0 12px
 
+      @media(max-width: 1000px)
+        border-radius: 12px 12px 0 0
+
 
 
     &:last-child
       border-radius: 0 12px 12px 0
+
+      @media(max-width: 1000px)
+        border-radius: 0 0 12px 12px
 
 </style>

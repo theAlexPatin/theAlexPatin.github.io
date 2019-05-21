@@ -33,7 +33,10 @@ export default {
     color: rgba(#ffffff, 0.8)
     letter-spacing: 7px
     font-weight: 100
-    //text-shadow: 2px 2px 16px rgba(#000000, 0.68)
+
+    @media(max-width: 740px)
+      top: 150px
+      font-size: 40px
 
   .header-image
     box-shadow: inset 0 0 4em 1.8em #000
