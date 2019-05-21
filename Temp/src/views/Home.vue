@@ -8,7 +8,9 @@
             :link="'Tech'"
             :text="'TECH'"
             :background="'tech'"/>
-          <p>Helping small companies build quickly for sustainable growth</p>
+          <div class="button-sub-text">
+            <p>Helping small companies build quickly for sustainable growth</p>
+          </div>
         </div>
       </div>
     </div>
@@ -22,7 +24,9 @@
             :link="'Music'"
             :text="'MUSIC'"
             :background="'music'"/>
-          <p>Professional production for indie, pop, and R&amp;B artists</p>
+          <div class="button-sub-text">
+            <p>Professional production for indie, pop, and R&amp;B artists</p>
+          </div>
         </div>
       </div>
     </div>
@@ -117,13 +121,16 @@ export default {
         @media (max-width: 600px)
           margin-bottom: 60px
 
+      .button-sub-text
+        width: 100%
+        text-align: center
+
       p
         margin: 10px auto
-        font-family: TisaPro-Light
         font-size: 22px
         color: #FFFFFF
         //text-shadow: -1px 1px 1px #000
-        width: 400px
+        max-width: 400px
         line-height: 33px
         letter-spacing: 0.7px
         text-align: center
@@ -131,7 +138,7 @@ export default {
         @media (max-width: 600px)
           font-size: 18px
           line-height: 25px
-          width: 320px
+          max-width: 320px
 
 
   .tech-side

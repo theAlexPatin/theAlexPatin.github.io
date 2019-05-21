@@ -3,29 +3,29 @@
     <div class="content">
       <div class="about-image"/>
       <p>
-        I'm a Boston-based engineer, passionate about music and building technology
-        for the future.
+        <span>I'm an engineer</span>, passionate about music and building technology
+        for the future. I collaborate with and consult for startups and musicians alike - <span>remote and in Boston</span>.
       </p>
       <p>
-        I am currently the CTO at <a href="https://squarelink.com" target="_blank">Squarelink</a>
-        and the Blockchain Innovation Fellow at Harvard University.
+        Currently, I'm the <span>CTO at </span> <a href="https://squarelink.com" target="_blank"><span>Squarelink</span></a>
+        and the Blockchain Innovation Fellow at <span>Harvard University</span>.
         I focus on building tools to enable the mass adoption of blockchain.
       </p>
       <p>
-        As a musician, I enjoy producing indie, pop, and R&amp;B music for myself and others as well as
-        performing live &dash; I play guitar, clarinet, piano, and attempt to sing. Check out some of my stuff
-        on <a href="https://soundcloud.com/theAlexPatin" target="_blank">Soundcloud</a>.
+        As a musician, I produce <span>indie</span>, <span>pop</span>, and <span>R&amp;B</span> artists in addition to
+        performing live &dash; I play <span>guitar</span>, <span>clarinet</span>, and <span>piano</span> (amongst others). Check out some of my stuff
+        on <a href="https://soundcloud.com/theAlexPatin" target="_blank"><span>Soundcloud</span></a>.
       </p>
       <p>
         What's more interesting is combining the two passions. I previously started a company called
-        Musical Minds &dash; brainwave-sensing headphones that help find music for you to focus, relax,
+        Musical Minds &dash; <span>brainwave-sensing headphones</span> that help find music for you to focus, relax,
         get motivated, or reduce stress.
       </p>
       <p>
-        If you like what I'm doing or if you're interested in learning more, feel free to
-        <a href="javascript:void(0)" @click="">Contact Me</a> for collaborations or rates.
-        You can also support me for as little as $1/month on
-        <a target="_blank" href="https://www.patreon.com/theAlexPatin">Patreon</a>.
+        If you like what I'm doing or if you're interested in learning more, please
+        <a href="javascript:void(0)" @click=""><span>Contact Me</span></a> for collaborations or rates.
+        You can also <span>support me</span> for as little as $1/month on
+        <a target="_blank" href="https://www.patreon.com/theAlexPatin"><span>Patreon</span></a>.
       </p>
     </div>
   </div>
@@ -40,7 +40,7 @@ export default {
   color: white
 
   .content
-    width: 50%
+    width: 60%
     margin: auto
     padding-top: 120px
     padding-bottom: 100px
@@ -68,9 +68,14 @@ export default {
 
     p
       font-size: 21px
-      font-family: TisaPro-Light
+      font-family: ProximaNova-Light
       letter-spacing: 0.4px
       line-height: 40px
+
+      span
+        color: #ffebeb
+        font-size: 22px
+        text-shadow: 2px 2px 5px #ff9c9c
 
       a
         color: white

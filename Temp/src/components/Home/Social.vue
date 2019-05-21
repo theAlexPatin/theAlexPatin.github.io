@@ -29,8 +29,11 @@ export default {
   padding: 0 20% 30px
 
   @media(max-width: 900px)
-    padding: 0
+    padding: 0 0 10px
     width: 100%
+
+  @media(max-width: 600px)
+    font-size: 25px
 
   a
     color: white
@@ -42,7 +45,7 @@ export default {
     &:hover
       color: lighten(#ff8080, 5%)
 
-  
+
 
 
 </style>
