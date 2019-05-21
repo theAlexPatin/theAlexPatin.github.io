@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      showContact: true
+      showContact: false
     }
   },
   mounted() {

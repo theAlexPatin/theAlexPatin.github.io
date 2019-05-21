@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="headline">
+    <div class="tagline">
       I’m an innovative engineer working on new tech and creative ventures
     </div>
     <div class="column music-side">
@@ -58,14 +58,15 @@ export default {
     flex-direction: column
     min-height: 100%
 
-  .headline
+  .tagline
+    font-family: proxima-nova, sans-serif
     position: fixed
-    top: 50%
+    top: 45%
     left: 50%
-    max-width: 460px
-    margin: -10% auto auto -230px
-    font-weight: 200
-    font-size: 25px
+    max-width: 550px
+    margin: -10% auto auto -275px
+    font-weight: 100
+    font-size: 30px
     color: #FFFFFF
     line-height: 37px
     letter-spacing: 1px

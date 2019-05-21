@@ -11,7 +11,6 @@ import './style/main.sass'
 
 Vue.config.productionTip = false
 Vue.use(VueHead)
-
 Vue.use(VueProgressBar, {
   color: '#ff8080',
   failedColor: '#874b4b',

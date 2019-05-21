@@ -1,7 +1,8 @@
 <template>
   <div class="trifold">
     <div class="panel gear">
-      <h1>Gear List <i class="fas fa-tools"/></h1>
+      <i class="fas fa-tools header-icon"/>
+      <h1>Gear List</h1>
       <p class="subtitle">
         I keep up with the latest gear to handle any project thrown any me.
         If you need something, we'll make it happen.
@@ -16,7 +17,8 @@
       </bulma-accordion>
     </div>
     <div class="panel services">
-      <h1>Services <i class="fas fa-concierge-bell"/></h1>
+      <i class="fas fa-concierge-bell header-icon"/>
+      <h1>Services</h1>
       <p class="subtitle">
         I love to help people bring their artistic and sonic visions to life.
         I work best with pop, indie, and R&amp;B artists.
@@ -31,11 +33,12 @@
       </div>
       <div class="service">
         <h3><i class="fas fa-guitar"/>Session/Gigging Musician</h3>
-        <p>Remotely mix your tracks or collaborative, in-person sessions.</p>
+        <p>Tracking in the studio or gig stand-in on guitar &amp; clarinet (others too if needed).</p>
       </div>
     </div>
     <div class="panel pricing">
-      <h1>Pricing <i class="fas fa-money-check-alt"/></h1>
+      <i class="fas fa-money-check-alt header-icon"/>
+      <h1>Pricing</h1>
       <p class="subtitle">
         I provide high quality results at prices afforable for the average musician.
       </p>
@@ -46,7 +49,7 @@
           Pricing could be more or less depending on the services you need
           and the complixity of your project. Best way to find out is to get in touch!
         </p>
-        <button class="button -accent" @click="showContact">Contact Me</button>
+        <button class="button -accent" @click="showContact()">Contact Me</button>
         <div class="filler"/>
         <p class="footnote">
           *Ask me about crazy discounts I offer for <strong>Berklee students</strong>.
@@ -60,7 +63,7 @@ import card from '@/style/bulma/card.sass'
 import { BulmaAccordion, BulmaAccordionItem } from 'vue-bulma-accordion'
 
 export default {
-  method: {
+  methods: {
     showContact() {
       this.$root.$emit('showContact')
     }
@@ -208,18 +211,21 @@ export default {
       padding: 0 20%
       line-height: 30px
 
+    .header-icon
+      color: transparentize($brand-color, 0.2)
+      font-size: 35px
+      margin-top: 20px
+      padding: 0
+
     h1
       font-weight: 700
       font-size: 25px
       font-family: ProximaNova-Regular
-      padding: 20px 0
+      padding-bottom: 20px
+      padding-top: 5px
       border-bottom: 1px solid #c8c8c8
       width: 80%
       margin: 0 auto
-
-      i
-        color: transparentize($brand-color, 0.2)
-        margin-left: 5px
 
       &::after
         border-bottom: 1px solid #000

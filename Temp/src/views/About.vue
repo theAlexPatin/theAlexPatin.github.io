@@ -4,16 +4,16 @@
       <div class="about-image"/>
       <p>
         <span>I'm an engineer</span>, passionate about music and building technology
-        for the future. I collaborate with and consult for startups and musicians alike - <span>remote and in Boston</span>.
+        for the future. I collaborate with and consult for startups and musicians alike - <span>remote and/or in Boston</span>.
       </p>
       <p>
         Currently, I'm the <span>CTO at </span> <a href="https://squarelink.com" target="_blank"><span>Squarelink</span></a>
-        and the Blockchain Innovation Fellow at <span>Harvard University</span>.
+        and the <a href="http://tech.seas.harvard.edu/fellows" target="_blank"><span>Blockchain Innovation Fellow</span></a> at <span>Harvard University</span>.
         I focus on building tools to enable the mass adoption of blockchain.
       </p>
       <p>
         As a musician, I produce <span>indie</span>, <span>pop</span>, and <span>R&amp;B</span> artists in addition to
-        performing live &dash; I play <span>guitar</span>, <span>clarinet</span>, and <span>piano</span> (amongst others). Check out some of my stuff
+        performing live &dash; I play guitar, clarinet, and piano (amongst others). Check out some of my stuff
         on <a href="https://soundcloud.com/theAlexPatin" target="_blank"><span>Soundcloud</span></a>.
       </p>
       <p>
