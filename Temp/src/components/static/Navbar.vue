@@ -8,7 +8,7 @@
       <a href="javscript:void(0)"
           @click="$router.push({ path: '/music' })">Music</a>
       <a href="https://medium.com/@theAlexPatin" target="_blank">Blog</a>
-      <a href="mailto:me@thealexpatin.com" @click="">Contact</a>
+      <a href="mailto:me@thealexpatin.com" @click="showContact">Contact</a>
     </push>
     <div @click="$router.push({ name: 'Home' })" class="left">
       <img src="../../assets/monogram-circle.png"/>

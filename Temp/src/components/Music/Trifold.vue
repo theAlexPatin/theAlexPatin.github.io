@@ -46,7 +46,7 @@
           Pricing could be more or less depending on the services you need
           and the complixity of your project. Best way to find out is to get in touch!
         </p>
-        <button class="button -accent">Contact Me</button>
+        <button class="button -accent" @click="showContact">Contact Me</button>
         <div class="filler"/>
         <p class="footnote">
           *Ask me about crazy discounts I offer for <strong>Berklee students</strong>.
@@ -60,6 +60,11 @@ import card from '@/style/bulma/card.sass'
 import { BulmaAccordion, BulmaAccordionItem } from 'vue-bulma-accordion'
 
 export default {
+  method: {
+    showContact() {
+      this.$root.$emit('showContact')
+    }
+  },
   data() {
     return {
       software: [

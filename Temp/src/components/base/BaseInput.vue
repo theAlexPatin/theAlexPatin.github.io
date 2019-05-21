@@ -75,7 +75,7 @@ textarea {
   border-bottom: 1px solid white;
   padding-left: 10px;
   color: white;
-  z-index: 1001;
+  width: 100%;
 }
 
 textarea:focus {
@@ -86,7 +86,7 @@ textarea:focus {
 
 .form-group {
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 40px;
 }
 
 .form-control {
@@ -96,7 +96,7 @@ textarea:focus {
   border-bottom: 1px solid white;
   padding-left: 10px;
   color: white;
-  z-index: 1001;
+  width: 100%;
 }
 
 .form-control:focus {
@@ -108,12 +108,11 @@ textarea:focus {
 .form-control-placeholder {
   text-transform: uppercase;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 10px;
   padding: 7px 0 0 13px;
   transition: all 200ms;
   color: #ff8080;
-  z-index: 800;
 }
 
 a {
@@ -131,9 +130,6 @@ textarea:focus + .form-control-placeholder {
   opacity: 1;
 }
 
-.valid,
-textarea:focus {
-  margin-top: 15px;
-}
+
 
 </style>

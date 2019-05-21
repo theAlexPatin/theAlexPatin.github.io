@@ -80,40 +80,52 @@ export default {
     bottom: 0
     margin: auto
     z-index: 101
-    padding: 15px
     background: transparent
     border-radius: 3px
     box-shadow: 0 1px 3px rgba(0, 0, 0, .2)
 
 
     .contact-form
-      width: 50%
       text-align: center
-      margin: 0 auto
+      color: white
+      margin: 0
       position: absolute
       top: 50%
-      -ms-transform: translateY(-50%)
-      transform: translateY(-50%)
-      color: white
+      left: 50%
+      -ms-transform: translate(-50%, -50%)
+      transform: translate(-50%, -50%)
+      max-width: 550px
 
       form
-        width: 400px
         margin: 0 auto
         display: grid
         grid-template-columns: 50% 50%
+        grid-column-gap: 40px
         grid-template-areas: "name email" "message message" "submit submit"
 
-        input
-          margin: 10px
+        @media (max-width: 500px)
+          grid-column-gap: 0
+          width: 300px
+          grid-template-columns: 100%
+          grid-template-areas: "name" "email" "message" "submit"
 
         .name
           grid-area: name
 
+          @media (max-width: 500px)
+            margin-left: -25px
+
         .email
           grid-area: email
 
+          @media (max-width: 500px)
+            margin-left: -25px
+
         .message
           grid-area: message
+
+          @media (max-width: 500px)
+            margin-left: -15px
 
         .button
           grid-area: submit
