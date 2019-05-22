@@ -11,7 +11,7 @@
       <a href="javascript:void(0)" @click="showContact">Contact</a>
     </push>
     <div @click="$router.push({ name: 'Home' })" class="left">
-      <img src="../../assets/monogram-circle.png"/>
+      <div class="logo"/>
       <h1>ALEX PATIN</h1>
     </div>
     <div class="separator"/>
@@ -95,16 +95,32 @@ export default {
     cursor: pointer
     display: inline-block
 
+    &:hover
+      .logo
+        background: url('../../assets/monogram-circle-red.png') no-repeat center
+        background-size: cover
+
+      h1
+        color: #ff8080
+
     @media (max-width: 940px)
       min-width: 180px
 
-    img
+    .logo
       width: 60px
+      height: 60px
       float: left
       margin-top: -10px
+      background: url('../../assets/monogram-circle.png') no-repeat center
+      background-size: cover
+      -webkit-transition: all 0.5s ease
+      -moz-transition: all 0.5s ease
+      -o-transition: all 0.5s ease
+      transition: all 0.5s ease
 
       @media (max-width: 940px)
         width: 45px
+        height: 45px
 
     h1
       font-family: ProximaNova-Bold
@@ -114,6 +130,10 @@ export default {
       line-height: 0
       letter-spacing: 1px
       padding-left: 20px
+      -webkit-transition: all 0.5s ease
+      -moz-transition: all 0.5s ease
+      -o-transition: all 0.5s ease
+      transition: all 0.5s ease
 
       @media (max-width: 940px)
         font-size: 21px

@@ -1,14 +1,13 @@
 <template>
   <div class="trifold">
     <div class="panel gear">
-      <i class="fas fa-tools header-icon"/>
-      <h1>Gear List</h1>
+      <i class="fas fa-tools header-icon"/><h1>Gear List</h1>
       <p class="subtitle">
-        I keep up with the latest gear to handle any project thrown any me.
-        If you need something, we'll make it happen.
+        I keep up with the best gear to handle any project thrown at me.
+        If you need something else, I'll make it happen.
       </p>
       <bulma-accordion dropdown class="list">
-        <bulma-accordion-item v-for="list in gear" class="sublist">
+        <bulma-accordion-item :key="list" v-for="list in gear" class="sublist">
           <h3 slot="title">{{ list.title }}</h3>
           <div slot="content">
             <p class="item" v-for="s in list.list">{{s}}</p>
@@ -41,6 +40,7 @@
       <h1>Pricing</h1>
       <p class="subtitle">
         I provide high quality results at prices afforable for the average musician.
+        I don't let budget dictate quality.
       </p>
       <div class="price">
         <h3>Given to you straight: <span>~$40/hr</span></h3>
@@ -124,8 +124,8 @@ export default {
 </script>
 <style lang="sass">
 .trifold
-  padding: 0 5%
-  width: 100%
+  margin-left: 10%
+  width: 90%
   display: grid
   grid-template-columns: 30% 30% 30%
   grid-template-areas: "gear services pricing"
@@ -139,6 +139,7 @@ export default {
     text-align: left
     width: 70%
     margin: 0 auto
+    margin-bottom: 40px
 
     span
       color: green
@@ -200,35 +201,34 @@ export default {
       padding: 0 15%
       margin-bottom: 20px
 
+
       .sublist
-        margin-top: 5px
+        margin-bottom: 15px
 
         .item
           color: #5c5c5c
           font-weight: 600
 
     .subtitle
-      padding: 0 20%
+      padding: 20px 20%
       line-height: 30px
 
     .header-icon
       color: transparentize($brand-color, 0.2)
-      font-size: 35px
-      margin-top: 20px
+      font-size: 38px
+      margin-top: 30px
       padding: 0
+
 
     h1
       font-weight: 700
       font-size: 25px
       font-family: ProximaNova-Regular
       padding-bottom: 20px
-      padding-top: 5px
-      border-bottom: 1px solid #c8c8c8
-      width: 80%
+      padding-top: 20px
+      width: 60%
       margin: 0 auto
-
-      &::after
-        border-bottom: 1px solid #000
+      border-bottom: 1px solid #f0f0f0
 
     &:first-child
       border-radius: 12px 0 0 12px

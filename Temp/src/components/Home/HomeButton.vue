@@ -1,7 +1,7 @@
 <template>
   <div class="home-button">
     <div class="wrapper"
-        :class="{ waves: background === 'music', tech: background === 'tech' }">
+        :class="{ waves: background === 'music', binary: background === 'tech' }">
       <div class="inner" @click="$router.push({ name: link })">
         {{text}}
       </div>
@@ -32,7 +32,7 @@ export default {
   .waves
     background: url('../../assets/landing/wave.png') no-repeat center
 
-  .tech
+  .binary
     background: url('../../assets/landing/binary.png') no-repeat center
 
   .wrapper

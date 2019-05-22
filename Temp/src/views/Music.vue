@@ -1,13 +1,6 @@
 <template>
   <div class="music">
     <div class="header-text">Patin Studios</div>
-    <aplayer class="player"
-        :music="{
-          theme: '#ff9c9c',
-          src: '/audio/R-B-Groove.mp3',
-          pic: '/img/album.png',
-          volume: 0.5
-        }"/>
     <div class="header-image"/>
     <div class="content">
       <p>
@@ -15,6 +8,14 @@
         Patin Studios has worked with numerous local and international pop, indie, and R&amp;B acts
         to deliver professional music production at a price point the average musician can afford.
       </p>
+
+      <aplayer class="player"
+          :music="{
+            theme: '#ff9c9c',
+            src: '/audio/R-B-Groove.mp3',
+            pic: '/img/album.png',
+            volume: 0.5
+          }"/>
     </div>
     <Trifold/>
   </div>
@@ -32,43 +33,31 @@ export default {
   padding-bottom: 100px
 
   .player
-    position: absolute
-    top: 280px
     width: 500px
-    left: 50%
-    margin-left: -250px
+    margin: 30px auto
     background: rgba(#000000, 0.4)
     color: white
 
     @media(max-width: 740px)
-      top: 180px
       width: 90%
-      margin: 0
-      left: 5%
 
     .aplayer-pic
       height: 40px
       width: 40px
-
     .aplayer-body
       background: transparent
       height: 40px
-
     .aplayer-info
       background: transparent
       padding: 0
       height: 40px
-
     .aplayer-music
       display: none
-
     .aplayer-volume-wrap
       display: none
-
     .aplayer-time
       .aplayer-icon
         display: none
-
     .aplayer-author
       display: none
 
@@ -85,7 +74,7 @@ export default {
     font-weight: 100
 
     @media(max-width: 740px)
-      top: 100px
+      top: 150px
       font-size: 40px
 
   .header-image
@@ -111,15 +100,4 @@ export default {
       letter-spacing: 0.4px
       line-height: 30px
       text-align: center
-
-      span
-        color: #ffebeb
-        font-size: 22px
-        text-shadow: 2px 2px 5px #ff9c9c
-
-      a
-        color: white
-        text-decoration: underline
-
-
 </style>

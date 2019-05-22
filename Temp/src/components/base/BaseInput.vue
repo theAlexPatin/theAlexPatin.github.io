@@ -1,6 +1,13 @@
 <template>
   <div class="form-group">
-    <input ref="field" v-if="type === 'text'" type="text" :name="name" class="form-control" autocomplete="off" required>
+    <input ref="field"
+        v-model="content"
+        v-if="type === 'text'"
+        type="text"
+        :name="name"
+        class="form-control"
+        autocomplete="off"
+        required>
     <textarea v-model="content" v-else ref="field" :class="{ valid: content !== '' }" name="message"/>
     <label tabindex="-1" class="form-control-placeholder"
         for="name">
@@ -23,23 +30,11 @@ export default {
     }
   },
   watch: {
-    value() {
-      this.content = this.value
-    }
-  },
-  computed: {
-    inputListeners: function() {
-      var vm = this
-      // `Object.assign` merges objects together to form a new object
-      return Object.assign({},
-        // We add all the listeners from the parent
-        this.$listeners,
-        // Then we can add custom listeners or override the
-        // behavior of some listeners.
-        {
-          input: event => this.$emit('input', this.content)
-        }
-      )
+    content () {
+      this.$emit('input', this.content)
+    },
+    input () {
+      this.content = this.input
     }
   },
   props: {
@@ -48,6 +43,7 @@ export default {
       default: ''
     },
     value: {
+      type: String,
       default: ''
     },
     name: {
@@ -100,9 +96,8 @@ textarea:focus {
 }
 
 .form-control:focus {
-  background: white;
   border: none;
-  color: black;
+  color: #ff8080;
 }
 
 .form-control-placeholder {
