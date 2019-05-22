@@ -7,13 +7,16 @@
         With 10+ years of software engineering experience,
         I ship clean and scalable apps &amp; services across stacks.
         I've worked with companies from early-stage startups to Fortune 500 companies
-        on projects including application architechture design, full-stack web development,
+        on projects including application architecture design, full-stack web development,
         API design, and blockchain development (among other things).
       </p>
       <h1>Services</h1>
       <div class="service">
         <h2>UI/UX &amp; Web Design</h2>
-        <p>Description</p>
+        <p>
+          I value simple content structure, clean design patterns, and thoughtful interactions.
+          I like to code things from scratch, and enjoy bringing things to life in the browser.
+        </p>
         <div class="tool-list">
           <div class="cell">
             <img src="/logos/sketch.png"/>
@@ -31,7 +34,10 @@
       </div>
       <div class="service">
         <h2>Full-stack Development</h2>
-        <p>Description</p>
+        <p>
+          Need someone to do it all? I architect and build medium-to-large web applications, microservices, and web services
+          to scale to hundreds of thousands of users.
+        </p>
         <div class="tool-list">
           <div class="cell">
             <img src="/logos/vue.png"/>
@@ -51,8 +57,11 @@
         </div>
       </div>
       <div class="service">
-        <h2>Blockchain Engineering</h2>
-        <p>Description</p>
+        <h2>Blockchain Development</h2>
+        <p>
+          I lead integration of blockchain technology into enterprise and business solutions.
+          I additionally build secure and efficient Ethereum &amp; EOS smart contracts and ÐApps.
+        </p>
         <div class="tool-list">
           <div class="cell">
             <img src="/logos/ethereum.png"/>
@@ -277,9 +286,13 @@ export default {
             border: 1px solid $brand-color
 
     .ask
-      max-width: 400px
-      margin: 0 auto 150px
+      max-width: 450px
+      margin: 0 auto 100px
       text-align: center
+
+      p
+        margin: 0 auto 30px
+        text-align: center
 
       .contact-button
         width: 300px
@@ -309,20 +322,22 @@ export default {
           width: 100%
 
       .tool-list
+        margin-left: 10%
         display: flex
         flex-wrap: wrap
         flex-direction: row
         text-align: center
+        @media(max-width: 700px)
+          margin-left: 0
 
         .cell
-          flex-grow: 1
-          padding: 20px
+          padding: 20px 30px
 
         img
-          height: 60px
+          height: 50px
 
           @media(max-width: 1100px)
-            height: 50px
+            height: 40px
 
 
 
