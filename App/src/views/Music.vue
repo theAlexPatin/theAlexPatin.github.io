@@ -31,6 +31,7 @@ export default {
 .music
   color: white
   padding-bottom: 100px
+  margin: 0
 
   .player
     width: 500px

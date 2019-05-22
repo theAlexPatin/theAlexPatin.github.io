@@ -131,9 +131,10 @@ export default {
   grid-template-areas: "gear services pricing"
 
   @media(max-width: 1000px)
-    grid-template-columns: 90%
+    grid-template-columns: 96%
     grid-template-areas: "gear" "services" "pricing"
-
+    margin-left: 4%
+    width: 96%
 
   .service
     text-align: left

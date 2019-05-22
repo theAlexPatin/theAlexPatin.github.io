@@ -154,7 +154,17 @@ export default {
         'Azure',
         'Docker',
         'Solidity',
-        'Objective-C'
+        'Objective-C',
+        'FFT',
+        'DWT',
+        'NLP',
+        'OpenCV',
+        'npm',
+        'Node',
+        'C#',
+        'Machine Learning',
+        'AWS EB',
+        'Squarelink'
       ],
       searchable: [],
       search: ''
