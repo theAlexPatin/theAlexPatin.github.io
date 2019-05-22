@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+=on-event($self: false)
+  @if $self
+    &,
+    &:hover,
+    &:active,
+    &:focus
+      @content
+  @else
+    &:hover,
+    &:active,
+    &:focus
+      @content
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+=when-inside($context)
+  #{$context} &
+    @content
+
+=optional-at-root($sel)
+  @at-root #{if(not &, $sel, selector-append(&, $sel))}
+    @content
+
+=placeholder
+  +optional-at-root('::-webkit-input-placeholder')
+    @content
+
+  +optional-at-root(':-moz-placeholder')
+    @content
+
+  +optional-at-root('::-moz-placeholder')
+    @content
+
+  +optional-at-root(':-ms-input-placeholder')
+    @content
+
+=soft-shadow($opacity: 1)
+  box-shadow: 0 4px 6px rgba(50,50,93,.11 * $opacity), 0 1px 3px rgba(0,0,0,.08 * $opacity)
+
+=soft-shadow-hover
+  box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08)
+ 
+=clearfix 
+  &:after 
+    content: ""
+    display: table
+    clear: both
