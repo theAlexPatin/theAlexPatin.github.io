@@ -201,6 +201,9 @@ export default {
       padding: 0 15%
       margin-bottom: 20px
 
+      @media(max-width: 500px)
+        padding: 0 20px
+
 
       .sublist
         margin-bottom: 15px
@@ -212,6 +215,9 @@ export default {
     .subtitle
       padding: 20px 20%
       line-height: 30px
+
+      @media(max-width: 500px)
+        padding: 20px
 
     .header-icon
       color: transparentize($brand-color, 0.2)

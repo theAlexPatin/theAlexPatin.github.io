@@ -1,6 +1,6 @@
 <template>
   <div class="tech">
-    <div class="header-text">Tech Studio</div>
+    <div class="header-text">Tech Production</div>
     <div class="header-image"/>
     <div class="content">
       <p>
@@ -29,6 +29,9 @@
           </div>
           <div class="cell">
             <img src="/logos/sass.png"/>
+          </div>
+          <div class="cell">
+            <img src="/logos/tses6.png"/>
           </div>
         </div>
       </div>
@@ -67,6 +70,9 @@
             <img src="/logos/ethereum.png"/>
           </div>
           <div class="cell">
+            <img src="/logos/squarelink.png"/>
+          </div>
+          <div class="cell">
             <img src="/logos/hyperledger.png"/>
           </div>
           <div class="cell">
@@ -92,6 +98,9 @@
         <div class="skills">
           <div class="cell" v-for="s in resultSet" :key="s">{{s}}</div>
         </div>
+      </div>
+      <div class="github">
+        See me on <a class="github" href="https://github.com/theAlexPatin"><i class="fab fa-github"/>Github</a>
       </div>
     </div>
   </div>
@@ -220,7 +229,10 @@ export default {
     font-weight: 100
 
     @media(max-width: 740px)
-      top: 100px
+      top: 130px
+      width: 90%
+      left: 50%
+      margin-left: -45%
       font-size: 35px
 
   .header-image
@@ -255,6 +267,7 @@ export default {
       margin-top: 50px
 
     .experience
+      margin-bottom: 40px
       p
         max-width: 450px
         margin: 0 auto 30px
@@ -339,6 +352,28 @@ export default {
           @media(max-width: 1100px)
             height: 40px
 
+    .github
+      width: 100%
+      margin: 0 auto
+      text-align: center
+      color: white
+      font-size: 25px
+      text-decoration: none
+      -webkit-transition: all 0.3s ease
+      -moz-transition: all 0.3s ease
+      -o-transition: all 0.3s ease
+      transition: all 0.3s ease
+
+      a
+        margin-left: 10px
+        font-weight: 700
+        font-size: 30px
+
+        &:hover
+          color: $brand-color
+
+      i
+        margin-right: 10px
 
 
 </style>
