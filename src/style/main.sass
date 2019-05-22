@@ -1,0 +1,101 @@
+@charset "UTF-8"
+
+// 1. Configuration and helpers
+
+@import abstracts/index
+
+// 2. Vendors
+
+@import vendor/normalize
+
+body
+  height: 100%
+  width: 100%
+  background: #000
+  font-family: ProximaNova-Regular
+
+
+.button
+  background: $brand-color
+  padding: 10px 20px
+  color: white
+  cursor: pointer
+  border-radius: 3px
+  user-select: none
+  transition: all .15s ease
+  display: inline-block
+  +soft-shadow
+  font-size: +ms(0)
+  font-weight: 600
+
+  &:hover
+    transform: translateY(-1px)
+    +soft-shadow-hover
+
+  &:active
+    transform: translateY(1px)
+    color: white
+    background: $brand-color
+    +soft-shadow
+
+  &.-accent
+    background: $brand-accent
+
+    &:hover
+      backgorund: $brand-accent
+
+  &.-small
+    padding: 7px 20px
+    font-size: +ms(-1)
+
+  &.-danger
+    background: $error-color
+
+  &.-light
+    background: $background-medium
+    color: $text-color
+
+    i, svg, em
+      color: $text-color-light
+
+    &:active
+      background: darken($background-medium, 2%)
+      color: $text-color
+
+  &[disabled]
+    pointer-events: none
+    opacity: 0.8
+
+  &.-secondary
+    background: rgba(230, 236, 255, 60)
+    color: $brand-color
+    font-weight: 700
+
+  &.-hollow
+    background: none
+    border: solid 1px $brand-color
+    color: $brand-color
+    box-shadow: none
+    transition: none
+
+    &:hover
+      background: $brand-color
+      color: white
+      transition: all .3s ease
+
+
+    &.-accent
+      border-color: $brand-accent
+      color: $brand-accent
+
+      &:hover
+        background: $brand-accent
+        color: white
+
+
+    +on-event
+      box-shadow: none
+      transform: none
+
+    &:active
+      opacity: .8

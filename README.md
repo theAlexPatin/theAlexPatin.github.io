@@ -1,5 +1,23 @@
-# Personal Website
+# Alex Patin's Portfolio site
 
-Hello
+## Installing
 
-Alex Patin's Personal Website. Find it at [theAlexPatin.com](http://www.theAlexPatin.com).
+```
+$ git clone https://github.com/theAlexPatin/theAlexPatin.github.io Site
+$ cd Site
+$ npm install
+```
+
+## Running in Development
+
+`$ npm run serve`
+
+
+## Building for Production
+
+```
+$ export NODE_ENV=production
+$ npm run build
+```
+
+To deploy to your site, host the files built in the `dist` folder.
