@@ -13,7 +13,7 @@
           :music="{
             theme: '#ff9c9c',
             src: '/audio/R-B-Groove.mp3',
-            pic: '/img/album.png',
+            pic: '/img/album.jpg',
             volume: 0.5
           }"/>
     </div>

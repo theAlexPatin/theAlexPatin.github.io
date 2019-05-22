@@ -51,7 +51,7 @@ export default {
 
     .about-image
       box-shadow: inset 0 0 4em 1.8em #000
-      background: url('../assets/about/album.png') no-repeat center
+      background: url('../assets/about/album.jpg') no-repeat center
       background-size: contain
       width: 400px
       height: 400px
