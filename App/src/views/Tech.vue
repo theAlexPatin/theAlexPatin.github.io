@@ -172,7 +172,9 @@ export default {
         'Photoshop',
         'Stripe API',
         'Heroku',
-        'AWS Lambda'
+        'AWS Lambda',
+        'Angular',
+        'React.js'
       ],
       searchable: [],
       search: ''
