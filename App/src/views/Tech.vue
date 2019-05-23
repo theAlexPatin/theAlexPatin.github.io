@@ -164,7 +164,15 @@ export default {
         'C#',
         'Machine Learning',
         'AWS EB',
-        'Squarelink'
+        'Squarelink',
+        'Web Scraping',
+        'Selenium',
+        'AWS Route 53',
+        'Slate Documentation',
+        'Photoshop',
+        'Stripe API',
+        'Heroku',
+        'AWS Lambda'
       ],
       searchable: [],
       search: ''
