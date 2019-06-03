@@ -124,7 +124,7 @@ export default {
         'Java',
         'JavaScript',
         'JQuery',
-        'Adruino',
+        'Arduino',
         'Django',
         'Flask',
         'MySQL',
