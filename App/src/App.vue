@@ -1,5 +1,6 @@
 <template>
   <div class="container" id="thealexpatin">
+    <preloader/>
     <contact :show="showContact" @close="showContact = false"/>
     <vue-progress-bar></vue-progress-bar>
     <Navbar class="navbar"/>
@@ -14,12 +15,14 @@
 import Navbar from '@/components/static/Navbar'
 import Footer from '@/components/static/Footer'
 import Contact from '@/components/static/Contact'
+import Preloader from '@/components/static/Preloader'
 export default {
   name: 'HomeView',
   components: {
     Navbar,
     Footer,
-    Contact
+    Contact,
+    Preloader
   },
   data() {
     return {
