@@ -163,9 +163,12 @@ export default {
     -o-background-size: cover
     background-size: cover
 
+    .overlay
+      background: rgba(0,0,0,.25)
+
     @media (max-width: 1200px)
       background-position: center -150px
     @media (max-width: 675px)
-      background-position: center
+      background-position: center -90px
 
 </style>
