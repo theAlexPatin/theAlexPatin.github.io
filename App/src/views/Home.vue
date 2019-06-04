@@ -59,7 +59,7 @@ export default {
     min-height: 100%
 
   .tagline
-    font-family: proxima-nova, sans-serif
+    font-family: ProximaNova-Regular
     position: fixed
     top: 45%
     left: 50%
@@ -137,7 +137,7 @@ export default {
         text-align: center
 
         @media (max-width: 600px)
-          font-size: 18px
+          font-size: 20px
           line-height: 25px
           max-width: 320px
 

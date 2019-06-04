@@ -44,6 +44,7 @@ export default {
     background-size: contain
     border-radius: 20px
     font-family: ProximaNova-Bold
+    font-weight: 800
     font-size: 27px
     color: #FFFFFF
     width: 230px
@@ -70,6 +71,7 @@ export default {
       width: 100%
       height: 100%
       border-radius: 20px
+      font-family: ProximaNova-Bold
       background: rgba(59,59,59,0.56)
       -webkit-transition: all 0.5s ease
       -moz-transition: all 0.5s ease
