@@ -1,13 +1,5 @@
 <template>
   <div v-if="!removed" :class="{ preloader: true, hidden: hidden }">
-    <div class="vertical-lign">
-      <div id="top"/>
-      <div id="bottom"/>
-    </div>
-    <div class="horizontal-lign">
-      <div id="left"/>
-      <div id="right"/>
-    </div>
     <div :class="{ animation: true, red: finished }" id="animation"/>
   </div>
 </template>
@@ -30,22 +22,6 @@ export default {
       //reverseStack: true,
     }, () => {
       this.finished = true
-      new Vivus('top', {
-        duration: 40,
-        file: '/img/vertical-top.svg'
-      })
-      new Vivus('bottom', {
-        duration: 40,
-        file: '/img/vertical-bottom.svg'
-      })
-      new Vivus('left', {
-        duration: 40,
-        file: '/img/horizontal-left.svg'
-      })
-      new Vivus('right', {
-        duration: 40,
-        file: '/img/horizontal-right.svg'
-      })
       setTimeout(() => {
         this.hidden = true
         setTimeout(() => {
@@ -73,59 +49,6 @@ export default {
   overflow: show
   z-index: 100000
   background: #000
-
-  .vertical-lign
-    height: 100%
-
-    @media (max-width: 1200px)
-      display: none
-
-    .cls-1, .cls-2
-      stroke: $brand-color
-
-    #top
-      width: 8px
-      height: calc(50% - 125px)
-      position: absolute
-      top: 125px
-      left: 50%
-      transform: translate(-50%, -125px)
-
-    #bottom
-      width: 8px
-      height: calc(50% - 125px)
-      position: absolute
-      bottom: 125px
-      left: 50%
-      transform: translate(-50%, 125px)
-
-  .horizontal-lign
-    width: 100%
-
-    @media (min-width: 1199px)
-      display: none
-
-    .cls-1, .cls-2
-      stroke: $brand-color
-
-    #left
-      height: 8px
-      width: calc(50% - 125px)
-      position: absolute
-      left: 125px
-      top: 50%
-      transform: translate(-125px, -50%)
-
-    #right
-      height: 8px
-      width: calc(50% - 125px)
-      position: absolute
-      right: 125px
-      top: 50%
-      transform: translate(125px, -50%)
-
-      
-
 
   .animation
     width: 250px
