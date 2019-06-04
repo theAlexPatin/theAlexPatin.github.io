@@ -1,22 +1,6 @@
 <template>
   <div class="home-view">
     <social/>
-    <div class="column tech-side">
-      <div class="overlay">
-        <div class="column-content">
-          <HomeButton class="home-button"
-            :link="'Tech'"
-            :text="'TECH'"
-            :background="'tech'"/>
-          <div class="button-sub-text">
-            <p>Helping small companies build quickly for sustainable growth</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tagline">
-      I’m an innovative engineer working on new tech and creative ventures
-    </div>
     <div class="column music-side">
       <div class="overlay">
         <div class="column-content">
@@ -26,6 +10,22 @@
             :background="'music'"/>
           <div class="button-sub-text">
             <p>Professional production for indie, pop, and R&amp;B artists</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tagline">
+      I’m an innovative engineer working on new tech and creative ventures
+    </div>
+    <div class="column tech-side">
+      <div class="overlay">
+        <div class="column-content">
+          <HomeButton class="home-button"
+            :link="'Tech'"
+            :text="'TECH'"
+            :background="'tech'"/>
+          <div class="button-sub-text">
+            <p>Helping small companies build quickly for sustainable growth</p>
           </div>
         </div>
       </div>

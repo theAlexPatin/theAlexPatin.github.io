@@ -13,7 +13,7 @@
           :music="{
             theme: '#ff9c9c',
             src: '/audio/R-B-Groove.mp3',
-            pic: '/img/album.jpg',
+            pic: '/img/album.png',
             volume: 0.5
           }"/>
     </div>
@@ -80,10 +80,14 @@ export default {
 
   .header-image
     box-shadow: inset 0 0 4em 1.8em #000
-    background: url('../assets/music/music.jpg') no-repeat top
+    background: url('../assets/music/music.jpg') no-repeat
+    background-position: 0 -100px
     background-size: cover
     width: 100%
     height: 350px
+
+    @media (max-width: 950px)
+      background-position: top
 
     @media(max-width: 740px)
       height: 250px
