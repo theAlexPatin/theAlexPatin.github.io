@@ -70,9 +70,8 @@ export default {
     text-align: center
     width: 100%
     font-size: 50px
-    color: rgba(#ffffff, 0.8)
+    color: white
     letter-spacing: 8px
-    font-weight: 100
 
     @media(max-width: 740px)
       top: 150px
