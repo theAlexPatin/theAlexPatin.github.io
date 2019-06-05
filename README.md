@@ -1,10 +1,14 @@
 # Alex Patin's Portfolio site
 
-## Installing
+Built using Vue.js
+
+[See Live Demo Here](https://thealexpatin.com)
+
+## Installation
 
 ```
 $ git clone https://github.com/theAlexPatin/theAlexPatin.github.io Site
-$ cd Site
+$ cd Site/App
 $ npm install
 ```
 
@@ -16,8 +20,9 @@ $ npm install
 ## Building for Production
 
 ```
+$ cd App
 $ export NODE_ENV=production
 $ npm run build
 ```
 
-To deploy to your site, host the files built in the `dist` folder.
+All files are built to the root directory for simple hosting on Github Pages. You can update the build script if you are hosting elsewhere.
