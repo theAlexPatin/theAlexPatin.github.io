@@ -79,7 +79,7 @@ export default {
         'Scarlett 2i4 (2nd gen)',
         'Yamaha HS8 Monitors',
         'Line6 Spider Jam',
-        'Line6 POD HDX',
+        'Line6 POD HD500X',
         'StudioLogic SL88 Piano/MIDI',
         'Akai Mini MPK II',
       ],
