@@ -22,8 +22,12 @@
         get motivated, or reduce stress.
       </p>
       <p>
+        When I have free time, I'm mostly playing soccer or tennis. I also own and operate <span><a href="https://bathtubvineyards.com" target="_blank">Bathtub Vineyards</a></span>
+        &dash; a research initiative focused on pushing the boundaries of alcohol content in wine.
+      </p>
+      <p>
         If you like what I'm doing or if you're interested in learning more, please
-        <a href="javascript:void(0)" @click=""><span>Contact Me</span></a> for collaborations or rates.
+        <a href="javascript:void(0)" @click="$root.$emit('showContact')"><span>Contact Me</span></a> for collaborations or rates.
         You can also <span>support me</span> for as little as $1/month on
         <a target="_blank" href="https://www.patreon.com/theAlexPatin"><span>Patreon</span></a>.
       </p>
