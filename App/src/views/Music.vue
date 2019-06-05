@@ -74,8 +74,11 @@ export default {
     letter-spacing: 8px
 
     @media(max-width: 740px)
-      top: 150px
-      font-size: 40px
+      top: 130px
+      width: 90%
+      left: 50%
+      margin-left: -45%
+      font-size: 35px
 
   .header-image
     box-shadow: inset 0 0 4em 1.8em #000
