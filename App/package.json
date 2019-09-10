@@ -75,7 +75,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "sass:watch": "sass --watch src/style/main.sass:src/style/main.css",
-    "deploy": "npm run build; push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "version": "1.0.0"
 }

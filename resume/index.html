@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Alexander Patin</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Nunito+Sans&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ff9c9c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+	<script language="javascript">
+		window.onload = function () {
+		    var uls = document.getElementsByClassName("flex-list");
+		    var lis = [];
+		    for(var i = 0; i < uls.length; i++){
+		    	lis.push.apply(lis, uls[i].getElementsByTagName("li"));
+		    }
+
+		    for(var i = 0; i < lis.length; i++){
+		    	var oldString = lis[i].innerHTML;
+		    	var newString = "<span class='first-letter'>"
+			    + oldString.charAt(0)
+			    + "</span>"
+			    + oldString.slice(1);
+		    	lis[i].innerHTML = newString;
+		    }
+		};
+	</script>
+
+</head>
+
+<body>
+	<main id="cv">
+		<section class="top">
+			<div class="name">Alex Patin</div><!--Didn't like the font for the "t" -->
+			<div class="contact">
+				<div class="row">
+					<p><a target="_blank" href="http://theAlexPatin.com"><span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>theAlexPatin.com</a></p>
+					<p><a target="_blank" href="https://github.com/theAlexPatin"><span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>theAlexPatin</a></p>
+					<p><a target="_blank" href="https://linkedin.com/in/theAlexPatin"><span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>in/theAlexPatin</a></p>
+				</div>
+				<div class="row">
+					<p><a target="_blank" href="mailto:apatin@seas.harvard.edu"><span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>apatin@seas.harvard.edu</a></p>
+					<p><a target="_blank" href="https://medium.com/@theAlexPatin"><span class="icon"><i class="fa fa-medium" aria-hidden="true"></i></span>@theAlexPatin</a></p>
+					<p><a target="_blank" href="https://twitter.com/theAlexPatin"><span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>theAlexPatin</a></p>
+				</div>
+			</div>
+		</section>
+		<section id="main">
+			<table class="main">
+				<td valign="top" id="left">
+					<ul class="skill-rows">
+						<li>
+							<div class="header">Technologies</div>
+							<ul class="flex-list">
+								<li>Vue.js</li>
+								<li>React.js</li>
+								<li>Web3.js</li>
+								<li>Node</li>
+								<li>AWS (Certified)</li>
+								<li>Docker</li>
+								<li>Kubernetes</li>
+								<li>MongoDB</li>
+								<li>Hyperledger</li>
+								<li>Git</li>
+								<li>Linux</li>
+								<li>Truffle</li>
+								<li>TensorFlow</li>
+								<li>Scikit-learn</li>
+								<li>Selenium</li>
+								<li>Geth</li>
+							</ul>
+						</li>
+						<li>
+							<div class="header">Design</div>
+							<ul class="flex-list">
+								<li>Sketch</li>
+								<li>Illustrator</li>
+								<li>Photoshop</li>
+								<li>Figma</li>
+								<li>Sass/CSS</li>
+								<li>HTML</li>
+							</ul>
+						</li>
+						<li>
+							<div class="header">Expertise</div>
+							<ul class="flex-list">
+								<li>Blockchain</li>
+								<li>Ethereum</li>
+								<li>PaaS</li>
+								<li>Signal Processing</li>
+								<li>Machine Learning</li>
+								<li>Blockchain</li>
+								<li>Natural Language Processing</li>
+								<li>Control Systems</li>
+								<li>Embedded Systems</li>
+							</ul>
+						</li>
+						<li>
+							<div class="header">Languages</div>
+							<ul class="flex-list">
+								<li>JavaScript/ES7</li>
+								<li>TypeScript</li>
+								<li>Python</li>
+								<li>Golang</li>
+								<li>C</li>
+								<li>C++</li>
+								<li>C#</li>
+								<li>Java</li>
+								<li>Solidity</li>
+								<li>Obj-C</li>
+							</ul>
+						</li>
+						<li>
+							<div class="header">Awards</div>
+							<ul class="awards">
+								<li>Harvard Innovation Fellow</li>
+								<li>Slavin Foundation Fellow</li>
+								<li>'The Investment' Finalist</li>
+								<li>PennTap Learning Factory Grant</li>
+								<li>Erickson Discovery Grant</li>
+								<li>Whitman Endowment</li>
+								<li>1st Place at HackPSU</li>
+							</ul>
+						</li>
+						<li>
+							<div class="header">Free Time?</div>
+							<ul class="flex-list">
+								<li>Music (Guitar, Clarinet, Piano, Production)</li>
+								<li>Tennis (USTA 5.0)</li>
+								<li>Soccer</li>
+								<li>BathtubVineyards.com</li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+				<td valign="top" id="middle">
+					<ul class="center-list">
+						<li id="education">
+							<div class="header">Education</div>
+							<div class="content">
+								<div class="job">Harvard University <span class="title">Blockchain Innovation Fellow</span><span class="year">September 2018 &mdash;</span></div>
+								<div class="job">Penn State University <span class="title">B.S. Computer Science</span><span class="year">Class of 2018</span></div>
+							</div>
+						</li>
+						<li id="work">
+							<div class="header">Professional Experience</div>
+							<div class="content">
+								<div class="job">Squarelink.com: <span class="title">Co-founder, CTO</span><span class="year">Sept 2018 &mdash;</span></div>
+								<ul class="custom-bullet">
+									<li>Built the first non-custodial cryptocurrency wallet allowing users to sign in, sign transactions, and recover accounts with just an email and password</li>
+									<li>Drafted patent application and recieved allowance from USPTO on claims for "Technologies for Private Key Recovery in Distributed Ledger Systems"</li>
+									<li>Architected and developed a standard OAuth 2.0 provider for 3rd party applications to interact with Squarelink users via our REST API</li>
+									<li>Wrote and published the "squarelink" npm package, allowing DApps to install Squarelink as a standard Web3 provider in web3.js</li>
+									<li>Created a developer console for 3rd party developers to register and manage applications with Squarelink along with documentation for Squarelink's API and SDK</li>
+									<li>Facilitated the integration of Squarelink's SDK into 50+ applications including Totle Swap, Ethfinex, Pool Together, 1inch Exchange, and Web3Connect</li>
+									<li>Designed Squarelink Event Pass, a secure alternative to Burner Wallet to help quickly and easily onboard non-traditional users into the crypto space.</li>
+									<li>Launched a PoC for Event Pass at ETHBoston to provide Point-of-sale tools for vendors to accept 1700+ crypto payments from 500+ attendees ($20,000+ in value)</li>
+								</ul>
+								<div class="job">Musical Minds: <span class="title">Founder, CEO</span><span class="year">Nov 2015 - Sept 2017</span></div>
+								<ul class="custom-bullet">
+									<li>Directed 20 employees in the creation of a music-for-wellness recommendation engine powered by proprietary brainwave-sensing headphones</li>
+									<li>Developed a Python REST API using AWS ElasticBeanstalk, AWS Cognito, Sanic, DynamoDB, and Apache Spark for collaborative filtering-based music recommendations</li>
+									<li>Designed EEG biopotential amplifiers using Multisim and developed a DWT/SVM mental state classifier using C++/Tensorflow embedded on a TI-CC430 MCU</li>
+									<li>Leveraged music streaming APIs and SDKs for in-app music playback on iOS and Android</li>
+									<li>Garnered $21,000 in non-equity financing through several grants, competitions, and awards</li>
+								</ul>
+								<div class="job">Microsoft: <span class="title">Student Partner to Penn State</span><span class="year">Aug 2015 - May 2018</span></div>
+								<ul class="custom-bullet">
+									<li>Organized 23 tech workshops on MS developer tools for college students</li>
+									<li>Mastered tools including Azure, Project Oxford, Windows IoT toolkits, etc</li>
+									<li>Volunteered at public schools through "Hour of Code" to teach young students how to code</li>
+								</ul>
+								<div class="job">Optum: <span class="title">Software Development Intern</span><span class="year">May - Aug 2017</span></div>
+								<ul class="custom-bullet">
+									<li>Developed a natural language understanding API and integrated it with complex internal business tools to simplify navigation using Flask, RASA, SPARQL, Docker, and ElasticSearch</li>
+									<li>Built an AngularJS UI for centralization of UnitedHealth patient information between doctors</li>
+									<!--<li>Collaborated on Amazon Alexa skills to enhance assisted living and memory care units</li>-->
+								</ul>
+								<div class="job">Lunar Lion: <span class="title">Guidance, Navigation, and Controls Lead Engineer</span><span class="year">Apr 2015 - Jan 2016</span></div>
+								<ul class="custom-bullet">
+									<li>Directed 35 students in the development of five software/hardware subsystems including flight software, ground controls, modelling and controls, systems testing, and visual guidance</li>
+									<li>Interfaced with craft sensors using C/C++ embedded on Arduino and RTD controllers</li>
+									<li>Prototyped an Arduino and C#/WPF Ground Control Station for command transmissions</li>
+									<li>Implemented a monocular surface reconstruction algorithm leveraging parallax motion of lunar surface features and spline interpolation for landing sequence adjustment using C++/OpenCV</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</td>
+			</table>
+			<footer>Resume built with HTML & CSS</footer>
+		</section>
+	</main>
+</body>
+</html>

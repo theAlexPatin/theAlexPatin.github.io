@@ -22,7 +22,7 @@ export default {
     Navbar,
     Footer,
     Contact,
-    Preloader
+    Preloader,
   },
   data() {
     return {
