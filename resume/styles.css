@@ -252,7 +252,7 @@ ul.flex-list li a:not(:hover) {
 	margin: 5px 0px 2px;
 	font-size: 15px;
 	color: #db6b6b;
-	font-weight: 700 !important;
+	font-weight: 700;
 }
 .title {
 	font-style: italic;
