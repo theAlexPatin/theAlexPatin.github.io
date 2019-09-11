@@ -115,6 +115,7 @@ export default {
       skills: [
         'Vue.js',
         'ES6/7',
+        'TypeScript',
         'Python',
         'Webpack',
         'Rollup',
