@@ -250,13 +250,14 @@ ul.flex-list li a:not(:hover) {
 }
 .job {
 	margin: 5px 0px 2px;
-	font-weight: bold;
 	font-size: 15px;
-	color:rgb(85,142,213);;
+	color: #db6b6b;
+	font-weight: 700;
 }
 .title {
 	font-style: italic;
 	font-size: 13px;
+	font-weight: bold;
 	color:black;
 }
 .year {
