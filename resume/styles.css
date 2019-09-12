@@ -169,8 +169,8 @@ footer {
 	margin-top: -3px;
 	list-style-type: none;
 	padding: 0px 0px 0px 10px;
-	min-height: 947px;
-	max-height: 947px;
+	min-height: 944px;
+	max-height: 944px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -277,34 +277,6 @@ ul.flex-list li a:not(:hover) {
 
 /* ----------------------------------------------Print---------------------------------------------------------------------*/
 
-@media print {
-	#cv {
-		width: auto;
-		max-width: none;
-	}
-	.content {
-		font-weight: 400; /* lighter for pdf printing */
-	}
-	.title{
-		font-weight: 400;
-	}
-	.job, #research .project { /* lighter for pdf printing */
-		font-weight: 500;
-	}
-	.name{
-	}
-	.skill-rows{
-		min-height: 948px;
-	}
-	.center-list{
-		min-height: 933px;
-	}
-}
-
-
-
-}
-
 ul.flex-list li a {
 	white-space:nowrap
 }
@@ -330,7 +302,7 @@ ul.flex-list li a:not(:hover) {
 	margin: 15px 0;
 }
 .job {
-	margin: 5px 0px 2px;
+	margin: 10px 0px 2px;
 	font-weight: bold;
 	font-size: 15px;
 	color:#db6b6b;
@@ -383,11 +355,8 @@ ul.flex-list li a:not(:hover) {
 	.title{
 		font-weight: 400;
 	}
-	.job, #research .project { /* lighter for pdf printing */
-		font-weight: 500;
-	}
 	.skill-rows{
-		min-height: 948px;
+		min-height: 947px;
 	}
 	.center-list{
 		min-height: 933px;
