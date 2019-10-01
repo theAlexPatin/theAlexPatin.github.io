@@ -2,12 +2,15 @@
   <div class="navbar">
     <push class="hamburger" right>
       <a href="javscript:void(0)"
-          @click="$router.push({ path: '/about' })">About Me</a>
+          @click="nav('About')">About Me</a>
       <a href="javscript:void(0)"
-          @click="$router.push({ path: '/tech' })">Tech</a>
+          @click="nav('Tech')">Tech</a>
       <a href="javscript:void(0)"
-          @click="$router.push({ path: '/music' })">Music</a>
+          @click="nav('Music')">Music</a>
       <a href="https://medium.com/@theAlexPatin" target="_blank">Blog</a>
+      <a href="/Resume.pdf"
+          @click="$ga('Resume', 'Navbar')"
+          target="_blank">Resume</a>
       <a href="javascript:void(0)" @click="showContact">Contact</a>
     </push>
     <div @click="$router.push({ name: 'Home' })" class="left">
@@ -17,17 +20,20 @@
     <div class="separator"/>
     <div class="right">
       <a href="javascript:void(0)"
-          @click="$router.push({ path: '/about' })"
+          @click="nav('About')"
           :class="{ active: $route.name === 'About'}">About Me</a>
       <a href="javascript:void(0)"
           v-if="$route.name!=='Home'"
-          @click="$router.push({ path: '/music' })"
+          @click="nav('Music')"
           :class="{ active: $route.name === 'Music'}">Music</a>
       <a href="javascript:void(0)"
           v-if="$route.name!=='Home'"
-          @click="$router.push({ path: '/tech' })"
+          @click="nav('Tech')"
           :class="{ active: $route.name === 'Tech'}">Tech</a>
       <a href="https://medium.com/@theAlexPatin" target="_blank">Blog</a>
+      <a href="/Resume.pdf"
+          @click="$ga('Resume', 'Navbar')"
+          target="_blank">Resume</a>
       <a href="javascript:void(0)" @click="showContact">Contact</a>
     </div>
   </div>
@@ -41,8 +47,13 @@ export default {
   },
   methods: {
     showContact() {
+      this.$ga('Contact', 'Navbar')
       this.$root.$emit('showContact')
-    }
+    },
+    nav(name) {
+      this.$ga(name, 'Navbar')
+      this.$router.push({ name })
+    },
   }
 }
 </script>
@@ -74,7 +85,7 @@ export default {
     &.active
       color: #ff8080
 
-    @media (max-width: 940px)
+    @media (max-width: 1050px)
       margin-left: 0
 
     &:first-child
@@ -88,7 +99,7 @@ export default {
     .bm-burger-bars
       background-color: white
 
-    @media (max-width: 940px)
+    @media (max-width: 1050px)
       visibility: visible
 
   .left
@@ -103,7 +114,7 @@ export default {
       h1
         color: #ff8080
 
-    @media (max-width: 940px)
+    @media (max-width: 1050px)
       min-width: 180px
 
     .logo
@@ -118,7 +129,7 @@ export default {
       -o-transition: all 0.5s ease
       transition: all 0.5s ease
 
-      @media (max-width: 940px)
+      @media (max-width: 1050px)
         width: 45px
         height: 45px
 
@@ -135,19 +146,19 @@ export default {
       -o-transition: all 0.5s ease
       transition: all 0.5s ease
 
-      @media (max-width: 940px)
+      @media (max-width: 1050px)
         font-size: 21px
         padding-left: 0
 
   .separator
     flex: 1
 
-    @media (max-width: 940px)
+    @media (max-width: 1050px)
       flex: 0
 
   .right
 
-    @media (max-width: 940px)
+    @media (max-width: 1050px)
       visibility: hidden
 
 </style>

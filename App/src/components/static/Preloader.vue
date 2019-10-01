@@ -15,19 +15,17 @@ export default {
   },
   mounted() {
     new Vivus('animation', {
-      duration: 100,
+      duration: 65,
       file: '/img/preloader.svg',
-      //animTimingFunction: Vivus.EASE_IN,
       pathTimingFunction: Vivus.EASE_IN,
-      //reverseStack: true,
     }, () => {
       this.finished = true
       setTimeout(() => {
         this.hidden = true
         setTimeout(() => {
           this.removed = true
-        }, 1000)
-      }, 300)
+        }, 650)
+      }, 400)
     })
   }
 }
