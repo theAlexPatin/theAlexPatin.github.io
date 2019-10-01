@@ -65,6 +65,7 @@ import { BulmaAccordion, BulmaAccordionItem } from 'vue-bulma-accordion'
 export default {
   methods: {
     showContact() {
+      this.$ga('Contact', 'Music')
       this.$root.$emit('showContact')
     }
   },

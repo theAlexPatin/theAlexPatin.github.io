@@ -10,6 +10,15 @@
         on projects including application architecture design, full-stack web development,
         API design, and blockchain development (among other things).
       </p>
+      <div class="github">
+        See me on
+        <a class="github"
+            target="_blank"
+            @click="$ga('Github', 'Tech')"
+            href="https://github.com/theAlexPatin">
+          <i class="fab fa-github"/>Github
+        </a>
+      </div>
       <h1>Services</h1>
       <div class="service">
         <h2>UI/UX &amp; Web Design</h2>
@@ -84,7 +93,9 @@
       <div class="ask">
         <h1>Get In Touch</h1>
         <p>Interesting in working together? Best way to make that happen is to get in touch!</p>
-        <button @click="$root.$emit('showContact')" class="button contact-button -accent -hollow">Contact Me</button>
+        <button @click="contact"
+            class="button contact-button -accent -hollow">Contact Me
+        </button>
       </div>
 
       <div class="experience">
@@ -98,9 +109,6 @@
         <div class="skills">
           <div class="cell" v-for="s in resultSet" :key="s">{{s}}</div>
         </div>
-      </div>
-      <div class="github">
-        See me on <a class="github" href="https://github.com/theAlexPatin"><i class="fab fa-github"/>Github</a>
       </div>
     </div>
   </div>
@@ -220,7 +228,11 @@ export default {
       }
 
       return array;
-    }
+    },
+    contact() {
+      this.$ga('Contact', 'Tech')
+      this.$root.$emit('showContact')
+    },
   },
   mounted() {
     this.skills = this.shuffle(this.skills)
@@ -379,6 +391,7 @@ export default {
       width: 100%
       margin: 0 auto
       text-align: center
+      text-decoration: underline
       color: white
       font-size: 25px
       text-decoration: none
@@ -391,9 +404,11 @@ export default {
         margin-left: 10px
         font-weight: 700
         font-size: 30px
+        border-bottom: 3px solid white
 
         &:hover
           color: $brand-color
+          border-bottom: 3px solid $brand-color
 
       i
         margin-right: 10px

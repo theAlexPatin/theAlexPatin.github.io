@@ -25,6 +25,21 @@ Vue.use(VueProgressBar, {
   inverse: false,
 })
 
+Vue.mixin({
+  methods: {
+    $ga(label, category = 'Navigation') {
+      try {
+        gtag('event', 'click', {
+          'event_category': category,
+          'event_label': label
+        })
+      } catch(err) {
+        console.log(err)
+      }
+    },
+  },
+})
+
 /*eslint-disable */
 new Vue({
   el: '#thealexpatin',

@@ -13,18 +13,21 @@
             <form autocomplete="off"
                 action="https://formspree.io/thealexpatin@gmail.com" method="POST">
               <BaseInput class="name"
+                  tabindex="1"
                   name="name"
                   :type="'text'"
                   :title="'Name'"/>
               <BaseInput class="email"
+                  tabindex="2"
                   name="email"
                   :type="'text'"
                   :title="'Email'"/>
               <BaseInput class="message"
+                  tabindex="3"
                   name="message"
                   :type="'textarea'"
                   :title="'Message'"/>
-              <input class="button -hollow" type="submit" value="Send">
+              <input @click="$ga('Send Inquiry', 'Contact')" class="button -hollow" type="submit" value="Send">
             </form>
           </div>
         </div>
@@ -70,7 +73,7 @@ export default {
 
   .contact-mask
     position: absolute
-    background: rgba(0, 0, 0, .9)
+    background: rgba(0, 0, 0, .96)
 
   .contact-dialog
     position: absolute

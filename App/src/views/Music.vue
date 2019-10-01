@@ -8,14 +8,16 @@
         Patin Studios has worked with numerous local and international pop, indie, and R&amp;B acts
         to deliver professional music production at a price point the average musician can afford.
       </p>
+      <div @click="play">
+        <aplayer class="player"
+            :music="{
+              theme: '#ff9c9c',
+              src: '/audio/R-B-Groove.mp3',
+              pic: '/img/album.png',
+              volume: 0.5
+            }"/>
+      </div>
 
-      <aplayer class="player"
-          :music="{
-            theme: '#ff9c9c',
-            src: '/audio/R-B-Groove.mp3',
-            pic: '/img/album.png',
-            volume: 0.5
-          }"/>
     </div>
     <Trifold/>
   </div>
@@ -25,6 +27,17 @@ import Aplayer from 'vue-aplayer'
 import Trifold from '@/components/Music/Trifold'
 export default {
   components: { Trifold, Aplayer },
+  data () {
+    return {
+      playing: false,
+    }
+  },
+  methods: {
+    play() {
+      this.playing = !this.playing
+      if (this.playing) this.$ga('Play Demo', 'Music')
+    },
+  },
 }
 </script>
 <style lang="sass">

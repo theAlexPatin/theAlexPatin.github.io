@@ -2,7 +2,7 @@
   <div class="home-button">
     <div class="wrapper"
         :class="{ waves: background === 'music', binary: background === 'tech' }">
-      <div class="inner" @click="$router.push({ name: link })">
+      <div class="inner" @click="nav(link)">
         {{text}}
       </div>
 
@@ -11,6 +11,12 @@
 </template>
 <script>
 export default {
+  methods: {
+    nav(name) {
+      this.$ga(name, 'Landing Nav')
+      this.$router.push({ name })
+    },
+  },
   props: {
     link: {
       type: String,
